@@ -71,5 +71,5 @@ Auto-check bonus (30 s, sans l'app) : réciter les 5 règles universelles + « U
 ## 🟡 Plan B si le score n'y est pas
 **Tu peux quand même jouer** — ajuste juste le curseur :
 - Joue **plus serré que la range** en cas de doute : fold les mains-frontière, garde le cœur sûr (premiums [6BB], paires limp/call, gros broadways). Folder un limp marginal ne coûte quasi rien ; le leak cher, c'est jouer trop large.
-- **Note tes hésitations** à table (main + position, 3 mots sur ton tel) → au retour, drille précisément ces positions.
+- **Logge tes mains à table** avec le 📓 Log intégré (3 taps : main → action → enregistrer) : verdict immédiat exact/presque/écarté, et le journal te dit quoi re-driller au retour. Entre deux mains uniquement, pas pendant.
 - Une table passive live est l'environnement le PLUS indulgent qui soit pour apprendre : peu de 3bets, peu de pression. C'est exactement le bon endroit pour roder la range.

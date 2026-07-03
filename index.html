@@ -188,6 +188,37 @@
     .d-hand { font-size: 46px; }
     .d-answers { grid-template-columns: 1fr; }
   }
+
+  /* ---- Preflop logger ---- */
+  #logRoot { position: fixed; inset: 0; z-index: 100; background: #262626; display: none; overflow: auto; }
+  #logRoot.on { display: block; }
+  .lg-tabs { display: flex; gap: 6px; margin-bottom: 14px; }
+  .lg-tab { flex: 1; background: #333; border: 1px solid #555; color: #ccc; border-radius: 8px; padding: 9px; font-size: 13px; font-weight: 600; cursor: pointer; }
+  .lg-tab.active { background: #40495a; border-color: var(--accent); color: #fff; }
+  .lg-sec { font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #8ba7bd; margin: 12px 2px 6px; }
+  .lg-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .lg-chip { background: #2f2f2f; border: 1px solid #555; color: #ccc; border-radius: 999px; padding: 7px 12px; cursor: pointer; font-size: 13px; }
+  .lg-chip.sel { background: #40495a; border-color: var(--accent); color: #fff; }
+  .lg-grid { display: grid; grid-template-columns: repeat(13, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); max-width: 480px; margin: 6px auto; }
+  .lg-cell { aspect-ratio: 1; background: #3c3c3c; color: #9a9a9a; font-size: 8px; font-weight: 600; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0; border: none; }
+  .lg-cell.pair { background: #464646; }
+  .lg-cell.sel { outline: 3px solid var(--accent); outline-offset: -2px; color: #fff; background: #40495a; z-index: 2; }
+  .d-ans.sel { border-color: var(--accent); background: #37414f; }
+  .lg-save { display: block; width: 100%; margin-top: 12px; background: #2f5233; border: 1px solid #4a8a52; color: #dff0e0; border-radius: 8px; padding: 13px; font-size: 15px; font-weight: 600; cursor: pointer; position: sticky; bottom: 8px; }
+  .lg-save:disabled { opacity: 0.4; cursor: default; position: static; }
+  .lg-reveal { display: block; margin: 8px auto 0; background: #2c2c2c; border: 1px solid #555; color: #ccc; border-radius: 6px; padding: 6px 12px; cursor: pointer; font-size: 12px; }
+  .lg-day { margin: 16px 0 4px; color: #8ba7bd; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .lg-entry { display: flex; align-items: center; gap: 8px; padding: 8px 4px; border-bottom: 1px solid #3d3d3d; font-size: 13px; }
+  .lg-entry .lg-hand { font-weight: 700; min-width: 34px; }
+  .lg-entry .lg-info { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .lg-meta { color: #888; }
+  .lg-badge { border-radius: 5px; padding: 2px 7px; font-size: 11px; font-weight: 700; flex: none; }
+  .lg-badge.exact { background: #2c4230; color: #8fd49c; }
+  .lg-badge.near { background: #3c4028; color: #cfd06a; }
+  .lg-badge.borderline { background: #43391f; color: #e0b45a; }
+  .lg-badge.far { background: #43302c; color: #e08a6a; }
+  .lg-badge.none { background: #3a3a3a; color: #999; }
+  .lg-del { background: none; border: none; color: #d66; cursor: pointer; font-size: 15px; flex: none; padding: 2px 6px; }
 </style>
 </head>
 <body>
@@ -199,6 +230,7 @@
   <input id="fileInput" type="file" accept="application/json,.json">
 </div>
 <div id="drillRoot"></div>
+<div id="logRoot"></div>
 
 <script>
 (function () {
@@ -548,6 +580,9 @@
 
     const drillBtn = document.createElement("button"); drillBtn.className = "nav-btn"; drillBtn.textContent = "🎯 Drill"; drillBtn.title = "Mode entraînement"; drillBtn.addEventListener("click", openDrill);
     topbarEl.appendChild(drillBtn);
+
+    const logBtn = document.createElement("button"); logBtn.className = "nav-btn"; logBtn.textContent = "📓 Log"; logBtn.title = "Logger une action preflop jouée à table"; logBtn.addEventListener("click", openLog);
+    topbarEl.appendChild(logBtn);
 
     const exportBtn = document.createElement("button"); exportBtn.className = "nav-btn"; exportBtn.textContent = "Exporter"; exportBtn.addEventListener("click", exportLibrary);
     const importBtn = document.createElement("button"); importBtn.className = "nav-btn"; importBtn.textContent = "Importer"; importBtn.addEventListener("click", () => fileInput.click());
@@ -1187,6 +1222,277 @@
     }
   });
   // =============== END DRILL MODE ===============
+
+  // ================= PREFLOP LOG =================
+  // Journal of real-table preflop decisions. Each entry is graded instantly with the
+  // drill's tolerance grader against the current library; names are denormalized so
+  // entries stay readable even if the library changes later.
+  const LOGS_KEY = "pokerRangeBuilder:logs";
+  function loadLogs() {
+    try { const r = localStorage.getItem(LOGS_KEY); if (r) { const p = JSON.parse(r); if (p && Array.isArray(p.entries)) return p; } } catch (e) {}
+    return { version: 1, entries: [], last: {} };
+  }
+  let plog = loadLogs();
+  function saveLogs() { try { localStorage.setItem(LOGS_KEY, JSON.stringify(plog)); } catch (e) {} }
+
+  const PRE_TAGS = [["fold", "Fold à moi"], ["limp", "1 limp"], ["multi", "Multi-limp"]];
+  let logOpen = false, logTab = "compose";
+  let logSel = { catId: null, coords: {}, hand: null, action: null, pre: null };
+  let logLastEntry = null, logShowRange = false;
+
+  function logCat() { return library.categories.find(c => c.id === logSel.catId) || null; }
+  function logCats() { return library.categories.filter(c => c.type === "defense" || (c.ranges && c.ranges.length)); }
+  function axisValues(cat, axis) {
+    if (axis.values) return axis.values;
+    const seen = [], out = [];
+    cat.ranges.forEach(r => { const v = r.coords[axis.key]; if (v && seen.indexOf(v) < 0) { seen.push(v); out.push(v); } });
+    return out;
+  }
+  function ensureLogCoords() {
+    const cat = logCat(); if (!cat) return;
+    const keys = [];
+    axesFor(cat).forEach(a => {
+      keys.push(a.key);
+      const vals = axisValues(cat, a);
+      if (!logSel.coords[a.key] || vals.indexOf(logSel.coords[a.key]) < 0) logSel.coords[a.key] = vals[0] || null;
+    });
+    Object.keys(logSel.coords).forEach(k => { if (keys.indexOf(k) < 0) delete logSel.coords[k]; });
+  }
+  function logCoordsTxt() {
+    const cat = logCat(); if (!cat) return "";
+    return axesFor(cat).map(a => logSel.coords[a.key]).filter(Boolean).join(" ");
+  }
+
+  function openLog() {
+    logOpen = true; logTab = "compose"; logLastEntry = null; logShowRange = false;
+    const last = plog.last || {};
+    const cats = logCats();
+    const cat = cats.find(c => c.id === last.catId) || (selectedCategory() && cats.find(c => c.id === selectedCategoryId)) || cats[0] || null;
+    logSel = { catId: cat ? cat.id : null, coords: {}, hand: null, action: null, pre: null };
+    if (cat && last.catId === cat.id && last.coords) logSel.coords = Object.assign({}, last.coords);
+    ensureLogCoords(); renderLog();
+  }
+  function closeLog() { logOpen = false; renderLog(); }
+
+  function logSave() {
+    const cat = logCat(); if (!cat || !logSel.hand || !logSel.action) return;
+    const range = coordsMatch(cat, logSel.coords);
+    let verdict = null;
+    if (range && Object.keys(range.cells || {}).length) {
+      const cm = buildCorrectMap(range.cells);
+      const g = gradeAnswer(cm, logSel.hand, logSel.action);
+      verdict = { band: g.band, d: g.d === Infinity ? -1 : g.d, at: g.at, correct: cm[logSel.hand] };
+    }
+    const entry = {
+      id: uid("l"), ts: Date.now(),
+      catId: cat.id, catName: cat.name, catType: cat.type,
+      coords: Object.assign({}, logSel.coords), coordsTxt: logCoordsTxt(),
+      hand: logSel.hand, action: logSel.action, actionLabel: drillActionById(logSel.action).label,
+      pre: logSel.pre, verdict: verdict
+    };
+    plog.entries.push(entry);
+    plog.last = { catId: cat.id, coords: Object.assign({}, logSel.coords) };
+    saveLogs();
+    logLastEntry = entry; logShowRange = false;
+    logSel.hand = null; logSel.action = null; logSel.pre = null;
+    renderLog();
+  }
+
+  function logVerdictMsg(entry) {
+    const v = entry.verdict;
+    if (!v) return "⚠️ Pas de range peinte pour ce spot — enregistré sans verdict.";
+    const correct = v.correct.map(id => drillActionById(id).label).join(" ou ");
+    if (v.band === "exact") return "✓ Exact — " + entry.hand + " : " + correct + ".";
+    if (v.band === "near") return "≈ Presque (1 main d'écart) — " + entry.hand + " = " + correct + ". « " + entry.actionLabel + " » ne devient juste qu'à " + v.at + ".";
+    if (v.band === "borderline") return "~ Limite (2 mains) — " + entry.hand + " = " + correct + ". « " + entry.actionLabel + " » serait juste à " + v.at + ".";
+    return "✗ Écarté — " + entry.hand + " = " + correct + ", pas « " + entry.actionLabel + " »" + (v.at ? " (juste seulement à " + v.at + ")" : "") + ".";
+  }
+
+  function renderLog() {
+    const root = document.getElementById("logRoot");
+    root.classList.toggle("on", logOpen);
+    root.innerHTML = "";
+    if (!logOpen) { if (!drillOpen) document.body.style.overflow = ""; return; }
+    document.body.style.overflow = "hidden";
+    const wrap = el("div", "drill-wrap");
+    const top = el("div", "drill-top");
+    top.appendChild(el("div", "d-title", "📓 Log preflop"));
+    top.appendChild(el("div", "d-spacer"));
+    const close = el("button", "drill-close", "✕ Fermer"); close.addEventListener("click", closeLog);
+    top.appendChild(close);
+    wrap.appendChild(top);
+
+    const tabs = el("div", "lg-tabs");
+    [["compose", "＋ Saisie"], ["journal", "Journal (" + plog.entries.length + ")"]].forEach(t => {
+      const b = el("button", "lg-tab" + (logTab === t[0] ? " active" : ""), t[1]);
+      b.addEventListener("click", () => { logTab = t[0]; renderLog(); });
+      tabs.appendChild(b);
+    });
+    wrap.appendChild(tabs);
+
+    wrap.appendChild(logTab === "compose" ? renderLogCompose() : renderLogJournal());
+    root.appendChild(wrap);
+  }
+
+  function renderLogCompose() {
+    const c = el("div");
+    if (logLastEntry) {
+      const v = logLastEntry.verdict;
+      const fb = el("div", "d-feedback " + (v ? v.band : "borderline"));
+      fb.textContent = logVerdictMsg(logLastEntry);
+      c.appendChild(fb);
+      const cat0 = library.categories.find(x => x.id === logLastEntry.catId);
+      const range0 = cat0 && cat0.ranges.find(r => axesFor(cat0).every(a => r.coords[a.key] === logLastEntry.coords[a.key]));
+      if (range0) {
+        if (logShowRange) c.appendChild(renderMiniGrid(range0.cells, logLastEntry.hand));
+        const rev = el("button", "lg-reveal", logShowRange ? "Masquer la range" : "Voir la range");
+        rev.addEventListener("click", () => { logShowRange = !logShowRange; renderLog(); });
+        c.appendChild(rev);
+      }
+    }
+    const cat = logCat();
+    c.appendChild(el("div", "lg-sec", "Catégorie de table"));
+    const chips = el("div", "lg-chips");
+    logCats().forEach(x => {
+      const ch = el("button", "lg-chip" + (x.id === logSel.catId ? " sel" : ""), x.name);
+      ch.addEventListener("click", () => { logSel.catId = x.id; logSel.coords = {}; logSel.action = null; ensureLogCoords(); renderLog(); });
+      chips.appendChild(ch);
+    });
+    c.appendChild(chips);
+    if (!cat) { c.appendChild(el("p", "d-hand-sub", "Aucune catégorie avec des ranges.")); return c; }
+
+    axesFor(cat).forEach(a => {
+      c.appendChild(el("div", "lg-sec", a.label));
+      const row = el("div", "lg-chips");
+      axisValues(cat, a).forEach(v => {
+        const ch = el("button", "lg-chip" + (logSel.coords[a.key] === v ? " sel" : ""), v);
+        ch.addEventListener("click", () => { logSel.coords[a.key] = v; renderLog(); });
+        row.appendChild(ch);
+      });
+      c.appendChild(row);
+    });
+
+    if (cat.type === "attaque") {
+      c.appendChild(el("div", "lg-sec", "Avant toi (optionnel)"));
+      const row = el("div", "lg-chips");
+      PRE_TAGS.forEach(t => {
+        const ch = el("button", "lg-chip" + (logSel.pre === t[0] ? " sel" : ""), t[1]);
+        ch.addEventListener("click", () => { logSel.pre = logSel.pre === t[0] ? null : t[0]; renderLog(); });
+        row.appendChild(ch);
+      });
+      c.appendChild(row);
+    }
+
+    c.appendChild(el("div", "lg-sec", "Ta main"));
+    const grid = el("div", "lg-grid");
+    HANDS.forEach(h => {
+      const cell = el("button", "lg-cell" + (h.row === h.col ? " pair" : "") + (logSel.hand === h.key ? " sel" : ""), h.key);
+      cell.addEventListener("click", () => { logSel.hand = h.key; renderLog(); });
+      grid.appendChild(cell);
+    });
+    c.appendChild(grid);
+
+    c.appendChild(el("div", "lg-sec", "Ton action"));
+    const ans = el("div", "d-answers");
+    actionsFor(cat).filter(a => a.style === "fill").concat([FOLD_ACTION]).forEach(a => {
+      const b = el("button", "d-ans" + (logSel.action === a.id ? " sel" : ""));
+      const sw = el("span", "d-sw"); sw.style.background = a.color; b.appendChild(sw);
+      b.appendChild(el("span", null, a.label));
+      b.addEventListener("click", () => { logSel.action = a.id; renderLog(); });
+      ans.appendChild(b);
+    });
+    c.appendChild(ans);
+
+    const save = el("button", "lg-save", "Enregistrer ✓");
+    save.disabled = !(logSel.hand && logSel.action);
+    save.addEventListener("click", logSave);
+    c.appendChild(save);
+    return c;
+  }
+
+  function renderLogJournal() {
+    const c = el("div");
+    if (!plog.entries.length) {
+      c.appendChild(el("p", "d-hand-sub", "Aucune entrée pour l'instant. Logge tes actions depuis l'onglet Saisie."));
+      return c;
+    }
+    const sorted = plog.entries.slice().sort((a, b) => b.ts - a.ts);
+    // today's mini-recap
+    const dayKey = ts => new Date(ts).toLocaleDateString("fr-FR");
+    const today = dayKey(Date.now());
+    const todays = sorted.filter(e => dayKey(e.ts) === today && e.verdict);
+    if (todays.length) {
+      const inTol = todays.filter(e => e.verdict.band !== "far").length;
+      const far = todays.length - inTol;
+      const card = el("div", "d-card");
+      card.appendChild(el("h3", null, "Aujourd'hui"));
+      card.appendChild(el("p", null, todays.length + " actions loggées · " + Math.round(inTol / todays.length * 100) + "% dans la tolérance · " + far + " écartée(s)."));
+      c.appendChild(card);
+    }
+    let curDay = null;
+    sorted.forEach(e => {
+      const d = dayKey(e.ts);
+      if (d !== curDay) { curDay = d; c.appendChild(el("div", "lg-day", d === today ? "Aujourd'hui" : d)); }
+      const row = el("div", "lg-entry");
+      const band = e.verdict ? e.verdict.band : "none";
+      const badgeTxt = { exact: "✓", near: "≈", borderline: "~", far: "✗", none: "—" }[band];
+      row.appendChild(el("span", "lg-badge " + band, badgeTxt));
+      row.appendChild(el("span", "lg-hand", e.hand));
+      const info = el("span", "lg-info");
+      const preTxt = e.pre ? (" · " + (PRE_TAGS.find(t => t[0] === e.pre) || ["", e.pre])[1]) : "";
+      info.textContent = e.actionLabel + " · " + e.coordsTxt + preTxt;
+      const meta = el("span", "lg-meta"); meta.textContent = " — " + e.catName;
+      info.appendChild(meta);
+      row.appendChild(info);
+      const time = el("span", "lg-meta", new Date(e.ts).toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" }));
+      row.appendChild(time);
+      const del = el("button", "lg-del", "×"); del.title = "Supprimer cette entrée";
+      del.addEventListener("click", () => { plog.entries = plog.entries.filter(x => x.id !== e.id); saveLogs(); renderLog(); });
+      row.appendChild(del);
+      c.appendChild(row);
+    });
+    const acts = el("div", "d-mini-actions"); acts.style.marginTop = "16px";
+    const eb = el("button", null, "Exporter le journal"); eb.addEventListener("click", exportLogs);
+    const ib = el("button", null, "Importer"); ib.addEventListener("click", importLogsFile);
+    const rb = el("button", null, "Tout effacer"); rb.addEventListener("click", () => {
+      if (!confirm("Effacer tout le journal preflop ? Irréversible (sauf si tu as un export).")) return;
+      plog.entries = []; saveLogs(); renderLog();
+    });
+    acts.appendChild(eb); acts.appendChild(ib); acts.appendChild(rb);
+    c.appendChild(acts);
+    return c;
+  }
+
+  function exportLogs() {
+    const blob = new Blob([JSON.stringify(plog, null, 2)], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a"); a.href = url; a.download = "poker-preflop-log.json";
+    document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
+  }
+  function importLogsFile() {
+    const inp = document.createElement("input"); inp.type = "file"; inp.accept = "application/json,.json";
+    inp.addEventListener("change", () => {
+      const f = inp.files[0]; if (!f) return;
+      const rd = new FileReader();
+      rd.onload = () => {
+        try {
+          const parsed = JSON.parse(rd.result);
+          if (!parsed || !Array.isArray(parsed.entries)) throw new Error("format non reconnu");
+          let n = 0;
+          parsed.entries.forEach(e => { if (e && e.id && !plog.entries.some(x => x.id === e.id)) { plog.entries.push(e); n++; } });
+          saveLogs(); renderLog();
+          alert("Journal fusionné (" + n + " entrées ajoutées).");
+        } catch (err) { alert("Fichier journal invalide : " + err.message); }
+      };
+      rd.readAsText(f);
+    });
+    inp.click();
+  }
+
+  document.addEventListener("keydown", e => {
+    if (logOpen && e.key === "Escape") { e.preventDefault(); closeLog(); }
+  });
+  // =============== END PREFLOP LOG ===============
 
   // ---- Boot ----
   initSelection();
