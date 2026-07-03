@@ -816,10 +816,14 @@
   const FOLD_ACTION = { id: FOLD_ID, label: "Fold", color: "#d9d9d9", style: "fill" };
   function drillActionById(id) { return id === FOLD_ID ? FOLD_ACTION : (actionById(id) || { id: id, label: id, color: "#888", style: "fill" }); }
   // In the "both" scenario a split accepts either of its two actions; an empty cell means Fold.
+  // A triangle-only cell (fillSecondary without fill, used by the defense ranges) is a
+  // fold-or-action conditional: the empty half IS Fold, so both answers are accepted.
   function correctAnswers(cell) {
     const out = [];
-    if (cell && cell.fill) out.push(cell.fill);
-    if (cell && cell.fillSecondary && cell.fillSecondary !== cell.fill) out.push(cell.fillSecondary);
+    if (cell && (cell.fill || cell.fillSecondary)) {
+      out.push(cell.fill || FOLD_ID);
+      if (cell.fillSecondary && cell.fillSecondary !== cell.fill) out.push(cell.fillSecondary);
+    }
     return out.length ? out : [FOLD_ID];
   }
   function buildCorrectMap(cells) {
@@ -885,7 +889,7 @@
   // Drill pool for a range = action cells + empty cells adjacent to one (boundary folds).
   // Deep trivial folds (72o...) are skipped so sessions stay meaningful.
   function rangePoolHands(cells) {
-    const has = {}; HANDS.forEach(h => { const c = cells[h.key]; if (c && c.fill) has[h.key] = true; });
+    const has = {}; HANDS.forEach(h => { const c = cells[h.key]; if (c && (c.fill || c.fillSecondary)) has[h.key] = true; });
     const pool = {}; Object.keys(has).forEach(k => { pool[k] = true; });
     HANDS.forEach(h => {
       if (has[h.key]) return;
