@@ -120,6 +120,71 @@
   .action-row .percent { width: 64px; text-align: right; font-variant-numeric: tabular-nums; font-size: 13px; color: #ccc; flex: none; }
 
   #fileInput { display: none; }
+
+  /* ---- Drill mode ---- */
+  #drillRoot { position: fixed; inset: 0; z-index: 100; background: #262626; display: none; overflow: auto; }
+  #drillRoot.on { display: block; }
+  .drill-wrap { max-width: 720px; margin: 0 auto; padding: 18px 16px 60px; }
+  .drill-top { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+  .drill-top .d-title { font-weight: 700; font-size: 16px; }
+  .drill-top .d-spacer { flex: 1; }
+  .d-progress { font-size: 13px; color: #9ab; font-variant-numeric: tabular-nums; }
+  .drill-close { background: #3a3a3a; border: 1px solid #555; color: #eee; border-radius: 6px; padding: 6px 12px; cursor: pointer; font-size: 13px; }
+  .drill-close:hover { background: #474747; }
+
+  .d-card { background: #333; border: 1px solid #4a4a4a; border-radius: 10px; padding: 18px; margin-bottom: 14px; }
+  .d-card h3 { margin: 0 0 6px; font-size: 15px; }
+  .d-card p { margin: 0 0 14px; color: #aaa; font-size: 13px; line-height: 1.4; }
+  .d-scope { display: grid; gap: 8px; }
+  .d-scope-btn { text-align: left; background: #2c2c2c; border: 1px solid #555; border-radius: 8px; padding: 12px 14px; cursor: pointer; color: #eee; display: flex; align-items: center; gap: 12px; }
+  .d-scope-btn:hover:not(:disabled) { border-color: var(--accent); background: #333b46; }
+  .d-scope-btn.sel { border-color: var(--accent); background: #37414f; }
+  .d-scope-btn:disabled { cursor: default; }
+  .d-scope-name { font-weight: 600; font-size: 14px; }
+  .d-scope-sub { color: #9aa; font-size: 12px; margin-top: 2px; }
+  .d-scope-count { margin-left: auto; color: #9ab; font-size: 12px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .d-start { display: block; width: 100%; margin-top: 14px; background: #2f5233; border: 1px solid #4a8a52; color: #dff0e0; border-radius: 8px; padding: 13px; font-size: 15px; font-weight: 600; cursor: pointer; }
+  .d-start:hover { background: #366039; }
+  .d-mini-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+  .d-mini-actions button { background: #2c2c2c; border: 1px solid #555; color: #ccc; border-radius: 6px; padding: 7px 11px; cursor: pointer; font-size: 12px; }
+  .d-mini-actions button:hover { background: #333; }
+
+  .d-context { text-align: center; color: #9ab; font-size: 12px; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .d-hand { text-align: center; font-size: 60px; font-weight: 800; letter-spacing: 1px; margin: 4px 0; color: #fff; }
+  .d-hand-sub { text-align: center; color: #888; font-size: 13px; margin-bottom: 18px; }
+  .d-answers { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 16px; }
+  .d-ans { display: flex; align-items: center; gap: 10px; background: #2f2f2f; border: 2px solid #555; border-radius: 9px; padding: 12px 14px; cursor: pointer; color: #eee; font-size: 14px; font-weight: 600; text-align: left; }
+  .d-ans:hover:not(:disabled) { border-color: var(--accent); }
+  .d-ans .d-sw { width: 22px; height: 22px; border-radius: 5px; border: 1px solid #666; flex: none; }
+  .d-kbd { margin-left: auto; color: #888; font-size: 12px; font-variant-numeric: tabular-nums; }
+  .d-ans:disabled { cursor: default; }
+  .d-ans.correct { border-color: #58c26a; background: #2c4230; }
+  .d-ans.chosen-wrong { border-color: #d9603b; background: #43302c; }
+  .d-ans.dim { opacity: 0.4; }
+
+  .d-feedback { border-radius: 9px; padding: 13px 15px; margin-bottom: 14px; font-size: 14px; line-height: 1.4; }
+  .d-feedback.exact { background: #223a27; border: 1px solid #58c26a; }
+  .d-feedback.near { background: #383c26; border: 1px solid #b9c24a; }
+  .d-feedback.borderline { background: #3d3623; border: 1px solid #d0a53b; }
+  .d-feedback.far { background: #3d2a26; border: 1px solid #d9603b; }
+  .d-next { display: block; width: 100%; background: #37414f; border: 1px solid var(--accent); color: #eaf2fb; border-radius: 8px; padding: 12px; font-size: 14px; font-weight: 600; cursor: pointer; }
+  .d-next:hover { background: #3f4c5e; }
+
+  .d-mini-grid { display: grid; grid-template-columns: repeat(13, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); max-width: 320px; margin: 0 auto 16px; }
+  .d-mini-cell { position: relative; aspect-ratio: 1; background: var(--empty-cell); overflow: hidden; }
+  .d-mini-cell .d-mini-sec { position: absolute; inset: 0; clip-path: polygon(100% 0, 100% 100%, 0 100%); }
+  .d-mini-cell.hl { outline: 3px solid #fff; outline-offset: -1px; z-index: 2; }
+
+  .d-sum-stat { display: flex; justify-content: space-between; padding: 8px 2px; border-bottom: 1px solid #444; font-size: 14px; }
+  .d-sum-stat:last-child { border-bottom: none; }
+  .d-sum-stat .v { font-weight: 700; font-variant-numeric: tabular-nums; }
+  .d-missed { display: flex; flex-wrap: wrap; gap: 6px; }
+  .d-missed .chip { background: #3d2a26; border: 1px solid #7a4a3a; border-radius: 5px; padding: 3px 8px; font-size: 12px; font-variant-numeric: tabular-nums; }
+
+  @media (max-width: 520px) {
+    .d-hand { font-size: 46px; }
+    .d-answers { grid-template-columns: 1fr; }
+  }
 </style>
 </head>
 <body>
@@ -130,6 +195,7 @@
   <div id="actionsPanel"></div>
   <input id="fileInput" type="file" accept="application/json,.json">
 </div>
+<div id="drillRoot"></div>
 
 <script>
 (function () {
@@ -477,6 +543,9 @@
     editBtn2.addEventListener("click", () => { editMode = !editMode; render(); });
     topbarEl.appendChild(editBtn2);
 
+    const drillBtn = document.createElement("button"); drillBtn.className = "nav-btn"; drillBtn.textContent = "🎯 Drill"; drillBtn.title = "Mode entraînement"; drillBtn.addEventListener("click", openDrill);
+    topbarEl.appendChild(drillBtn);
+
     const exportBtn = document.createElement("button"); exportBtn.className = "nav-btn"; exportBtn.textContent = "Exporter"; exportBtn.addEventListener("click", exportLibrary);
     const importBtn = document.createElement("button"); importBtn.className = "nav-btn"; importBtn.textContent = "Importer"; importBtn.addEventListener("click", () => fileInput.click());
     topbarEl.appendChild(exportBtn); topbarEl.appendChild(importBtn);
@@ -716,6 +785,396 @@
     };
     reader.readAsText(file); fileInput.value = "";
   });
+
+  // ================= DRILL MODE =================
+  function el(tag, cls, txt) { const e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; }
+
+  // Hand lattice: neighbours used to measure how many "crans" (rank-steps) a wrong answer is off.
+  // Pairs connect to adjacent pairs (diagonal); suited stays in the upper triangle; offsuit lower.
+  const RC_TO_KEY = {};
+  HANDS.forEach(h => { RC_TO_KEY[h.row + "," + h.col] = h.key; });
+  const NEIGHBORS = {};
+  HANDS.forEach(h => {
+    const i = h.row, j = h.col, res = [];
+    const inb = v => v >= 0 && v <= 12;
+    const push = (r, c) => { const k = RC_TO_KEY[r + "," + c]; if (k) res.push(k); };
+    const cand = (i === j) ? [[i-1, j-1], [i+1, j+1]] : [[i-1, j], [i+1, j], [i, j-1], [i, j+1]];
+    cand.forEach(rc => {
+      const r = rc[0], c = rc[1];
+      if (!inb(r) || !inb(c)) return;
+      if (i === j) { if (r === c) push(r, c); }
+      else if (i < j) { if (r < c) push(r, c); }
+      else { if (r > c) push(r, c); }
+    });
+    NEIGHBORS[h.key] = res;
+  });
+
+  const FOLD_ID = "FOLD";
+  const FOLD_ACTION = { id: FOLD_ID, label: "Fold", color: "#d9d9d9", style: "fill" };
+  function drillActionById(id) { return id === FOLD_ID ? FOLD_ACTION : (actionById(id) || { id: id, label: id, color: "#888", style: "fill" }); }
+  // In the "both" scenario a split accepts either of its two actions; an empty cell means Fold.
+  function correctAnswers(cell) {
+    const out = [];
+    if (cell && cell.fill) out.push(cell.fill);
+    if (cell && cell.fillSecondary && cell.fillSecondary !== cell.fill) out.push(cell.fillSecondary);
+    return out.length ? out : [FOLD_ID];
+  }
+  function buildCorrectMap(cells) {
+    const m = {}; HANDS.forEach(h => { m[h.key] = correctAnswers(cells[h.key]); }); return m;
+  }
+
+  // How far (in crans) the CHOSEN action is from a hand where it would be correct. 0 = exact.
+  const DIST_CAP = 3;
+  function offByDistance(correctMap, startKey, action) {
+    if (correctMap[startKey].indexOf(action) >= 0) return { d: 0, at: startKey };
+    const seen = {}; seen[startKey] = true;
+    let frontier = [startKey];
+    for (let depth = 1; depth <= DIST_CAP; depth++) {
+      const next = [];
+      for (let a = 0; a < frontier.length; a++) {
+        const nbs = NEIGHBORS[frontier[a]];
+        for (let b = 0; b < nbs.length; b++) {
+          const nb = nbs[b];
+          if (seen[nb]) continue;
+          seen[nb] = true;
+          if (correctMap[nb].indexOf(action) >= 0) return { d: depth, at: nb };
+          next.push(nb);
+        }
+      }
+      frontier = next;
+    }
+    return { d: Infinity, at: null };
+  }
+  function gradeAnswer(correctMap, handKey, chosen) {
+    const res = offByDistance(correctMap, handKey, chosen);
+    if (res.d === 0) return { band: "exact", q: 5, d: 0, at: res.at };
+    if (res.d === 1) return { band: "near", q: 4, d: 1, at: res.at };
+    if (res.d === 2) return { band: "borderline", q: 3, d: 2, at: res.at };
+    return { band: "far", q: 1, d: res.d, at: res.at };
+  }
+
+  // ---- Stats store (separate from the range library) ----
+  const STATS_KEY = "pokerRangeBuilder:stats";
+  function loadStats() { try { const r = localStorage.getItem(STATS_KEY); if (r) { const p = JSON.parse(r); if (p && p.items) return p; } } catch (e) {} return { version: 1, items: {} }; }
+  let stats = loadStats();
+  function saveStats() { try { localStorage.setItem(STATS_KEY, JSON.stringify(stats)); } catch (e) {} }
+  function itemKey(catId, rangeId, handKey) { return catId + "/" + rangeId + "/" + handKey; }
+  // SM-2 update; quality q from the grading band (5 exact, 4 near, 3 borderline, <=2 fail).
+  function updateSM2(k, q) {
+    const it = stats.items[k] || (stats.items[k] = { reps: 0, ease: 2.5, intervalDays: 0, due: 0, attempts: 0, correct: 0 });
+    if (q < 3) { it.reps = 0; it.intervalDays = 0; }
+    else {
+      it.reps = (it.reps || 0) + 1;
+      if (it.reps === 1) it.intervalDays = 1;
+      else if (it.reps === 2) it.intervalDays = 3;
+      else it.intervalDays = Math.max(1, Math.round((it.intervalDays || 1) * (it.ease || 2.5)));
+    }
+    const ef = (it.ease || 2.5) + (0.1 - (5 - q) * (0.08 + (5 - q) * 0.02));
+    it.ease = Math.max(1.3, ef);
+    it.due = Date.now() + (it.intervalDays || 0) * 86400000;
+    it.attempts = (it.attempts || 0) + 1;
+    if (q >= 3) it.correct = (it.correct || 0) + 1;
+    it.lastSeen = Date.now();
+    return it;
+  }
+
+  // ---- Session building ----
+  // Drill pool for a range = action cells + empty cells adjacent to one (boundary folds).
+  // Deep trivial folds (72o...) are skipped so sessions stay meaningful.
+  function rangePoolHands(cells) {
+    const has = {}; HANDS.forEach(h => { const c = cells[h.key]; if (c && c.fill) has[h.key] = true; });
+    const pool = {}; Object.keys(has).forEach(k => { pool[k] = true; });
+    HANDS.forEach(h => {
+      if (has[h.key]) return;
+      if (NEIGHBORS[h.key].some(nb => has[nb])) pool[h.key] = true;
+    });
+    return Object.keys(pool);
+  }
+  function scopeUnitsRaw(scope) {
+    const units = [];
+    const add = (cat, r) => { if (r && r.cells) { const hands = rangePoolHands(r.cells); if (hands.length) units.push({ cat: cat, range: r, hands: hands }); } };
+    if (scope === "position") { const c = selectedCategory(), r = currentRange(); if (c && r) add(c, r); }
+    else if (scope === "category") { const c = selectedCategory(); if (c) c.ranges.forEach(r => add(c, r)); }
+    else library.categories.forEach(c => c.ranges.forEach(r => add(c, r)));
+    return units;
+  }
+  function shuffle(a) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); const t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+  function buildSession(scope) {
+    const units = scopeUnitsRaw(scope), now = Date.now();
+    let items = [];
+    units.forEach(u => {
+      const cm = buildCorrectMap(u.range.cells);
+      u.hands.forEach(hk => {
+        const k = itemKey(u.cat.id, u.range.id, hk);
+        const it = stats.items[k];
+        items.push({ catId: u.cat.id, rangeId: u.range.id, handKey: hk, cat: u.cat, range: u.range, correctMap: cm, itemKey: k, due: it ? it.due : 0, seen: !!it });
+      });
+    });
+    // Order: due first, then unseen (new), then not-yet-due; shuffled within each group (interleaving).
+    const dueG = shuffle(items.filter(x => x.seen && x.due <= now));
+    const newG = shuffle(items.filter(x => !x.seen));
+    const laterG = shuffle(items.filter(x => x.seen && x.due > now));
+    const ordered = scope === "due" ? dueG : dueG.concat(newG, laterG);
+    return ordered.slice(0, scope === "due" ? 80 : 30);
+  }
+  function scopeStats(scope) {
+    const units = scopeUnitsRaw(scope), now = Date.now();
+    let total = 0, seen = 0, due = 0;
+    units.forEach(u => u.hands.forEach(hk => {
+      total++;
+      const it = stats.items[itemKey(u.cat.id, u.range.id, hk)];
+      if (it) { seen++; if (it.due <= now) due++; }
+    }));
+    return { total: total, seen: seen, due: due, ranges: units.length };
+  }
+
+  // ---- Drill state + control ----
+  let drillOpen = false, drill = null, drillScope = "category";
+  function openDrill() {
+    drillOpen = true; drill = null;
+    const cat = selectedCategory();
+    drillScope = (cat && cat.ranges.length) ? "category" : "all";
+    renderDrill();
+  }
+  function closeDrill() { drillOpen = false; drill = null; renderDrill(); }
+  function startScopeSession(scope) {
+    const q = buildSession(scope);
+    if (!q.length) { alert(scope === "due" ? "Rien à réviser pour l'instant — reviens plus tard ou choisis une autre portée." : "Aucune main à driller dans cette portée."); return; }
+    drill = { scope: scope, queue: q, pos: 0, answeredAt: null, tally: { asked: 0, exact: 0, near: 0, borderline: 0, far: 0 }, missed: [] };
+    renderDrill();
+  }
+  function answerDrill(chosen) {
+    if (!drill || drill.answeredAt) return;
+    const q = drill.queue[drill.pos];
+    const g = gradeAnswer(q.correctMap, q.handKey, chosen);
+    drill.answeredAt = { chosen: chosen, grade: g };
+    drill.tally.asked++; drill.tally[g.band]++;
+    updateSM2(q.itemKey, g.q); saveStats();
+    if (g.band === "far" || g.band === "borderline") drill.missed.push({ handKey: q.handKey, cat: q.cat });
+    if (g.band === "far" && (q._requeues || 0) < 2) { // relearn within the session
+      const nq = Object.assign({}, q); nq._requeues = (q._requeues || 0) + 1; nq.answeredAt = null;
+      drill.queue.splice(Math.min(drill.queue.length, drill.pos + 6), 0, nq);
+    }
+    renderDrill();
+  }
+  function nextDrill() { if (!drill) return; drill.pos++; drill.answeredAt = null; renderDrill(); }
+
+  function handDesc(key) {
+    if (key.length === 2) return "Paire — 6 combos";
+    return key[2] === "s" ? "Assorti — 4 combos" : "Dépareillé — 12 combos";
+  }
+
+  // ---- Drill rendering ----
+  function renderDrill() {
+    const root = document.getElementById("drillRoot");
+    root.classList.toggle("on", drillOpen);
+    root.innerHTML = "";
+    if (!drillOpen) { document.body.style.overflow = ""; return; }
+    document.body.style.overflow = "hidden";
+    const wrap = el("div", "drill-wrap");
+    const top = el("div", "drill-top");
+    top.appendChild(el("div", "d-title", "🎯 Drill"));
+    const prog = el("div", "d-progress");
+    if (drill && drill.pos < drill.queue.length) prog.textContent = (drill.pos + 1) + " / " + drill.queue.length;
+    top.appendChild(prog);
+    top.appendChild(el("div", "d-spacer"));
+    const close = el("button", "drill-close", "✕ Fermer"); close.addEventListener("click", closeDrill);
+    top.appendChild(close);
+    wrap.appendChild(top);
+    if (!drill) wrap.appendChild(renderDrillConfig());
+    else if (drill.pos >= drill.queue.length) wrap.appendChild(renderDrillSummary());
+    else wrap.appendChild(renderDrillQuestion());
+    root.appendChild(wrap);
+  }
+
+  function renderDrillConfig() {
+    const c = el("div");
+    const card = el("div", "d-card");
+    card.appendChild(el("h3", "", "Choisis quoi réviser"));
+    card.appendChild(el("p", "", "Le score tient compte de la précision : une main d'écart = « presque ». Les révisions sont programmées automatiquement (répétition espacée) ; termine en mélangé pour coller aux conditions réelles."));
+    const cat = selectedCategory(), r = currentRange();
+    const scopes = [
+      { key: "position", name: "Position courante", sub: (cat && r) ? boardTitle(cat, r) : "—", enabled: !!(cat && r) },
+      { key: "category", name: "Catégorie — positions mélangées", sub: cat ? cat.name : "—", enabled: !!(cat && cat.ranges.length) },
+      { key: "all", name: "Tout mélangé", sub: "Toutes les catégories", enabled: true },
+      { key: "due", name: "À réviser (répétition espacée)", sub: "Ce qui est dû maintenant", enabled: true, dueScope: true }
+    ];
+    const list = el("div", "d-scope");
+    scopes.forEach(s => {
+      const st = scopeStats(s.dueScope ? "all" : s.key);
+      const btn = el("button", "d-scope-btn" + (drillScope === s.key ? " sel" : ""));
+      if (!s.enabled) { btn.disabled = true; btn.style.opacity = 0.45; }
+      const info = el("div");
+      info.appendChild(el("div", "d-scope-name", s.name));
+      info.appendChild(el("div", "d-scope-sub", s.sub));
+      btn.appendChild(info);
+      btn.appendChild(el("div", "d-scope-count", s.dueScope ? (st.due + " dues") : (st.total + " mains")));
+      if (s.enabled) btn.addEventListener("click", () => { drillScope = s.key; renderDrill(); });
+      list.appendChild(btn);
+    });
+    card.appendChild(list);
+    const start = el("button", "d-start", "Commencer ▶");
+    start.addEventListener("click", () => startScopeSession(drillScope));
+    card.appendChild(start);
+    c.appendChild(card);
+
+    const card2 = el("div", "d-card");
+    card2.appendChild(el("h3", "", "Progression"));
+    const allst = scopeStats("all");
+    card2.appendChild(el("p", "", allst.seen + " mains vues · " + allst.due + " dues · " + allst.total + " mains actives au total."));
+    const acts = el("div", "d-mini-actions");
+    const eb = el("button", null, "Exporter les stats"); eb.addEventListener("click", exportStats);
+    const ib = el("button", null, "Importer les stats"); ib.addEventListener("click", importStatsFile);
+    const rb = el("button", null, "Réinitialiser"); rb.addEventListener("click", resetStats);
+    acts.appendChild(eb); acts.appendChild(ib); acts.appendChild(rb);
+    card2.appendChild(acts);
+    c.appendChild(card2);
+    return c;
+  }
+
+  function renderDrillQuestion() {
+    const q = drill.queue[drill.pos];
+    const c = el("div");
+    c.appendChild(el("div", "d-context", boardTitle(q.cat, q.range)));
+    c.appendChild(el("div", "d-hand", q.handKey));
+    c.appendChild(el("div", "d-hand-sub", handDesc(q.handKey)));
+    const answers = actionsFor(q.cat).filter(a => a.style === "fill").concat([FOLD_ACTION]);
+    const answered = drill.answeredAt;
+    const correctSet = q.correctMap[q.handKey];
+    const ans = el("div", "d-answers");
+    answers.forEach((a, idx) => {
+      const b = el("button", "d-ans");
+      const sw = el("span", "d-sw"); sw.style.background = a.color; b.appendChild(sw);
+      b.appendChild(el("span", null, a.label));
+      b.appendChild(el("span", "d-kbd", String(idx + 1)));
+      if (answered) {
+        b.disabled = true;
+        if (correctSet.indexOf(a.id) >= 0) b.classList.add("correct");
+        else if (a.id === answered.chosen) b.classList.add("chosen-wrong");
+        else b.classList.add("dim");
+      } else {
+        b.addEventListener("click", () => answerDrill(a.id));
+      }
+      ans.appendChild(b);
+    });
+    c.appendChild(ans);
+    if (answered) {
+      c.appendChild(renderFeedback(q, answered));
+      c.appendChild(renderMiniGrid(q.range.cells, q.handKey));
+      const isLast = drill.pos + 1 >= drill.queue.length;
+      const next = el("button", "d-next", isLast ? "Voir le résultat ▶" : "Suivant ▶  (Entrée)");
+      next.addEventListener("click", nextDrill);
+      c.appendChild(next);
+    } else {
+      c.appendChild(el("div", "d-hand-sub", "Choisis l'action — ou tape son chiffre"));
+    }
+    return c;
+  }
+
+  function renderFeedback(q, answered) {
+    const g = answered.grade;
+    const fb = el("div", "d-feedback " + g.band);
+    const correctLabels = q.correctMap[q.handKey].map(id => drillActionById(id).label).join(" ou ");
+    const chosenLabel = drillActionById(answered.chosen).label;
+    let msg;
+    if (g.band === "exact") msg = "✓ Exact — " + q.handKey + " : " + correctLabels + ".";
+    else if (g.band === "near") msg = "≈ Presque, 1 main d'écart — ici " + q.handKey + " = " + correctLabels + ". « " + chosenLabel + " » ne devient juste qu'à " + g.at + ".";
+    else if (g.band === "borderline") msg = "~ Limite, 2 mains d'écart — " + q.handKey + " = " + correctLabels + ". « " + chosenLabel + " » serait juste à " + g.at + ".";
+    else msg = "✗ Écarté — " + q.handKey + " = " + correctLabels + ", pas « " + chosenLabel + " »" + (g.at ? " (juste seulement à " + g.at + ")" : "") + ".";
+    fb.textContent = msg;
+    return fb;
+  }
+
+  function renderMiniGrid(cells, hlKey) {
+    const g = el("div", "d-mini-grid");
+    HANDS.forEach(h => {
+      const cd = cells[h.key] || {};
+      const cell = el("div", "d-mini-cell" + (h.key === hlKey ? " hl" : ""));
+      const fillA = cd.fill ? actionById(cd.fill) : null;
+      if (fillA) cell.style.background = fillA.color;
+      if (cd.fillSecondary) { const s = actionById(cd.fillSecondary); if (s) { const tri = el("div", "d-mini-sec"); tri.style.background = s.color; cell.appendChild(tri); } }
+      if (cd.outline && h.key !== hlKey) { const o = actionById(cd.outline); if (o) cell.style.boxShadow = "inset 0 0 0 2px " + o.color; }
+      g.appendChild(cell);
+    });
+    return g;
+  }
+
+  function renderDrillSummary() {
+    const c = el("div"), t = drill.tally;
+    const pass = t.exact + t.near + t.borderline;
+    const card = el("div", "d-card");
+    card.appendChild(el("h3", "", "Séance terminée"));
+    card.appendChild(el("p", "", "Précision : " + (t.asked ? Math.round(pass / t.asked * 100) : 0) + "% dans la tolérance (≤ 2 mains d'écart)."));
+    function stat(label, val, color) { const row = el("div", "d-sum-stat"); row.appendChild(el("span", null, label)); const v = el("span", "v", String(val)); if (color) v.style.color = color; row.appendChild(v); card.appendChild(row); }
+    stat("Questions", t.asked);
+    stat("✓ Exact", t.exact, "#7ed48c");
+    stat("≈ Presque (1 main)", t.near, "#cfd06a");
+    stat("~ Limite (2 mains)", t.borderline, "#d9b45a");
+    stat("✗ Écarté", t.far, "#e08a6a");
+    c.appendChild(card);
+    if (drill.missed.length) {
+      const m = el("div", "d-card");
+      m.appendChild(el("h3", "", "À retravailler"));
+      const wrap = el("div", "d-missed"); const seen = {};
+      drill.missed.forEach(x => { const key = x.handKey + "|" + x.cat.id; if (seen[key]) return; seen[key] = true; const chip = el("div", "chip", x.handKey); chip.title = boardTitle(x.cat, null); wrap.appendChild(chip); });
+      m.appendChild(wrap); c.appendChild(m);
+    }
+    const acts = el("div", "d-mini-actions");
+    const again = el("button", null, "Rejouer cette portée"); again.addEventListener("click", () => startScopeSession(drill.scope));
+    const back = el("button", null, "Changer de portée"); back.addEventListener("click", () => { drill = null; renderDrill(); });
+    const cl = el("button", null, "Fermer"); cl.addEventListener("click", closeDrill);
+    acts.appendChild(again); acts.appendChild(back); acts.appendChild(cl);
+    c.appendChild(acts);
+    return c;
+  }
+
+  // ---- Stats export / import / reset ----
+  function exportStats() {
+    const blob = new Blob([JSON.stringify(stats, null, 2)], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a"); a.href = url; a.download = "poker-drill-stats.json";
+    document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
+  }
+  function importStatsFile() {
+    const inp = document.createElement("input"); inp.type = "file"; inp.accept = "application/json,.json";
+    inp.addEventListener("change", () => {
+      const f = inp.files[0]; if (!f) return;
+      const rd = new FileReader();
+      rd.onload = () => {
+        try {
+          const parsed = JSON.parse(rd.result);
+          if (!parsed || typeof parsed.items !== "object") throw new Error("format non reconnu");
+          let n = 0;
+          Object.keys(parsed.items).forEach(k => {
+            const inc = parsed.items[k], cur = stats.items[k];
+            if (!cur || (inc.lastSeen || 0) > (cur.lastSeen || 0)) { stats.items[k] = inc; n++; }
+          });
+          saveStats(); renderDrill();
+          alert("Stats fusionnées (" + n + " entrées mises à jour).");
+        } catch (e) { alert("Fichier stats invalide : " + e.message); }
+      };
+      rd.readAsText(f);
+    });
+    inp.click();
+  }
+  function resetStats() {
+    if (!confirm("Effacer toutes les stats de drill ? Irréversible (sauf si tu as un export).")) return;
+    stats = { version: 1, items: {} }; saveStats(); renderDrill();
+  }
+
+  document.addEventListener("keydown", e => {
+    if (!drillOpen) return;
+    if (e.key === "Escape") { e.preventDefault(); closeDrill(); return; }
+    if (!drill || drill.pos >= drill.queue.length) return;
+    if (drill.answeredAt) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); nextDrill(); } return; }
+    const n = parseInt(e.key, 10);
+    if (!isNaN(n) && n >= 1) {
+      const q = drill.queue[drill.pos];
+      const answers = actionsFor(q.cat).filter(a => a.style === "fill").concat([FOLD_ACTION]);
+      if (n <= answers.length) { e.preventDefault(); answerDrill(answers[n - 1].id); }
+    }
+  });
+  // =============== END DRILL MODE ===============
 
   // ---- Boot ----
   initSelection();
