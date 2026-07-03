@@ -140,8 +140,11 @@
   .d-scope-btn:hover:not(:disabled) { border-color: var(--accent); background: #333b46; }
   .d-scope-btn.sel { border-color: var(--accent); background: #37414f; }
   .d-scope-btn:disabled { cursor: default; }
+  .d-scope-namerow { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
   .d-scope-name { font-weight: 600; font-size: 14px; }
+  .d-scope-badge { font-size: 11px; font-weight: 600; color: #d4e6ab; background: #33421f; border: 1px solid #5c7a3d; border-radius: 999px; padding: 1px 8px; white-space: nowrap; }
   .d-scope-sub { color: #9aa; font-size: 12px; margin-top: 2px; }
+  .d-scope-tip { color: #86a98f; font-size: 12px; margin-top: 5px; line-height: 1.35; }
   .d-scope-count { margin-left: auto; color: #9ab; font-size: 12px; font-variant-numeric: tabular-nums; white-space: nowrap; }
   .d-start { display: block; width: 100%; margin-top: 14px; background: #2f5233; border: 1px solid #4a8a52; color: #dff0e0; border-radius: 8px; padding: 13px; font-size: 15px; font-weight: 600; cursor: pointer; }
   .d-start:hover { background: #366039; }
@@ -995,7 +998,8 @@
     const cat = selectedCategory(), r = currentRange();
     const scopes = [
       { key: "position", name: "Position courante", sub: (cat && r) ? boardTitle(cat, r) : "—", enabled: !!(cat && r) },
-      { key: "category", name: "Catégorie — positions mélangées", sub: cat ? cat.name : "—", enabled: !!(cat && cat.ranges.length) },
+      { key: "category", name: "Catégorie — positions mélangées", sub: cat ? cat.name : "—", enabled: !!(cat && cat.ranges.length),
+        star: true, tip: "Le plus efficace : t'oblige à reconnaître puis distinguer chaque position, exactement comme à la table — là où le drill d'une seule position échoue." },
       { key: "all", name: "Tout mélangé", sub: "Toutes les catégories", enabled: true },
       { key: "due", name: "À réviser (répétition espacée)", sub: "Ce qui est dû maintenant", enabled: true, dueScope: true }
     ];
@@ -1005,8 +1009,12 @@
       const btn = el("button", "d-scope-btn" + (drillScope === s.key ? " sel" : ""));
       if (!s.enabled) { btn.disabled = true; btn.style.opacity = 0.45; }
       const info = el("div");
-      info.appendChild(el("div", "d-scope-name", s.name));
+      const nameRow = el("div", "d-scope-namerow");
+      nameRow.appendChild(el("span", "d-scope-name", s.name));
+      if (s.star) nameRow.appendChild(el("span", "d-scope-badge", "⭐ Recommandé"));
+      info.appendChild(nameRow);
       info.appendChild(el("div", "d-scope-sub", s.sub));
+      if (s.tip) info.appendChild(el("div", "d-scope-tip", s.tip));
       btn.appendChild(info);
       btn.appendChild(el("div", "d-scope-count", s.dueScope ? (st.due + " dues") : (st.total + " mains")));
       if (s.enabled) btn.addEventListener("click", () => { drillScope = s.key; renderDrill(); });
