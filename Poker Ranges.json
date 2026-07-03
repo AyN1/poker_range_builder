@@ -1,0 +1,5636 @@
+{
+  "version": 3,
+  "scenarioLabels": {
+    "tightness": {
+      "passive": "Relanceur serré",
+      "aggressive": "Relanceur large"
+    },
+    "iso": {
+      "passive": "Overlimp (table qui call)",
+      "aggressive": "Iso / open (bluff)"
+    }
+  },
+  "categories": [
+    {
+      "id": "ctler3s2",
+      "name": "Range Théorique RFI (raise first in)",
+      "type": "attaque",
+      "ranges": []
+    },
+    {
+      "id": "c997ddft",
+      "name": "Range attaque sur Table Passive",
+      "type": "attaque",
+      "ranges": [
+        {
+          "id": "pw8ikeyi",
+          "coords": {
+            "position": "UTG"
+          },
+          "cells": {
+            "22": {
+              "fill": "att_limp_call"
+            },
+            "33": {
+              "fill": "att_limp_call"
+            },
+            "44": {
+              "fill": "att_limp_call"
+            },
+            "55": {
+              "fill": "att_limp_call"
+            },
+            "66": {
+              "fill": "att_limp_call"
+            },
+            "77": {
+              "fill": "att_limp_call"
+            },
+            "88": {
+              "fill": "att_limp_call"
+            },
+            "99": {
+              "fill": "att_limp_call"
+            },
+            "JJ": {
+              "fill": "att_open_fold",
+              "outline": "att_6bb"
+            },
+            "TT": {
+              "fill": "att_open_fold",
+              "outline": "att_6bb"
+            },
+            "AQs": {
+              "fill": "att_open_fold"
+            },
+            "KQs": {
+              "fill": "att_open_fold"
+            },
+            "AJs": {
+              "fill": "att_open_fold"
+            },
+            "AA": {
+              "fill": "att_4bet_call",
+              "outline": "att_6bb"
+            },
+            "KK": {
+              "fill": "att_4bet_call",
+              "outline": "att_6bb"
+            },
+            "AKs": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "AKo": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "QQ": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "KTs": {
+              "fill": "att_limp_fold"
+            },
+            "QTs": {
+              "fill": "att_limp_fold"
+            },
+            "Q9s": {
+              "fill": "att_limp_fold"
+            },
+            "K9s": {
+              "fill": "att_limp_fold"
+            },
+            "A9s": {
+              "fill": "att_limp_fold"
+            },
+            "A7s": {
+              "fill": "att_limp_fold"
+            },
+            "A6s": {
+              "fill": "att_limp_fold"
+            },
+            "A8s": {
+              "fill": "att_limp_fold"
+            },
+            "J9s": {
+              "fill": "att_limp_fold"
+            },
+            "T8s": {
+              "fill": "att_limp_fold"
+            },
+            "KQo": {
+              "fill": "att_limp_fold"
+            },
+            "AJo": {
+              "fill": "att_limp_fold"
+            },
+            "AQo": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "KJs": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "QJs": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "ATs": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "JTs": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "T9s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "98s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "87s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "76s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "65s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "A5s": {
+              "fill": "att_limp_fold",
+              "fillSecondary": "att_limp_rr"
+            },
+            "A4s": {
+              "fill": "att_limp_fold",
+              "fillSecondary": "att_limp_rr"
+            },
+            "A3s": {
+              "fill": "att_limp_fold",
+              "fillSecondary": "att_limp_rr"
+            },
+            "A2s": {
+              "fill": "att_limp_fold",
+              "fillSecondary": "att_limp_rr"
+            }
+          }
+        },
+        {
+          "id": "ptc4dpb2",
+          "coords": {
+            "position": "UTG1"
+          },
+          "cells": {
+            "22": {
+              "fill": "att_limp_call"
+            },
+            "33": {
+              "fill": "att_limp_call"
+            },
+            "44": {
+              "fill": "att_limp_call"
+            },
+            "55": {
+              "fill": "att_limp_call"
+            },
+            "66": {
+              "fill": "att_limp_call"
+            },
+            "77": {
+              "fill": "att_limp_call"
+            },
+            "88": {
+              "fill": "att_limp_call"
+            },
+            "99": {
+              "fill": "att_limp_call"
+            },
+            "AA": {
+              "fill": "att_4bet_call",
+              "outline": "att_6bb"
+            },
+            "KK": {
+              "fill": "att_4bet_call",
+              "outline": "att_6bb"
+            },
+            "AKo": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "AKs": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "A9s": {
+              "fill": "att_limp_fold"
+            },
+            "K9s": {
+              "fill": "att_limp_fold"
+            },
+            "Q9s": {
+              "fill": "att_limp_fold"
+            },
+            "J9s": {
+              "fill": "att_limp_fold"
+            },
+            "T8s": {
+              "fill": "att_limp_fold"
+            },
+            "A8s": {
+              "fill": "att_limp_fold"
+            },
+            "A7s": {
+              "fill": "att_limp_fold"
+            },
+            "A6s": {
+              "fill": "att_limp_fold"
+            },
+            "A5s": {
+              "fill": "att_limp_fold",
+              "fillSecondary": "att_limp_rr"
+            },
+            "A4s": {
+              "fill": "att_limp_fold",
+              "fillSecondary": "att_limp_rr"
+            },
+            "A3s": {
+              "fill": "att_limp_fold",
+              "fillSecondary": "att_limp_rr"
+            },
+            "A2s": {
+              "fill": "att_limp_fold",
+              "fillSecondary": "att_limp_rr"
+            },
+            "AQo": {
+              "fill": "att_open_fold"
+            },
+            "KQo": {
+              "fill": "att_limp_fold"
+            },
+            "AJo": {
+              "fill": "att_limp_fold"
+            },
+            "AQs": {
+              "fill": "att_open_fold",
+              "outline": "att_6bb"
+            },
+            "AJs": {
+              "fill": "att_open_fold"
+            },
+            "KQs": {
+              "fill": "att_open_fold"
+            },
+            "ATo": {
+              "fill": "att_limp_fold"
+            },
+            "KJo": {
+              "fill": "att_limp_fold"
+            },
+            "JJ": {
+              "fill": "att_open_fold",
+              "outline": "att_6bb"
+            },
+            "TT": {
+              "fill": "att_open_fold",
+              "outline": "att_6bb"
+            },
+            "QQ": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "ATs": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "KJs": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "QJs": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "KTs": {
+              "fill": "att_limp_fold"
+            },
+            "QTs": {
+              "fill": "att_limp_fold"
+            },
+            "K8s": {
+              "fill": "att_limp_fold"
+            },
+            "JTs": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "T9s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "98s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "87s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "76s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "65s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "97s": {
+              "fill": "att_limp_fold"
+            }
+          }
+        },
+        {
+          "id": "pyyo3nuu",
+          "coords": {
+            "position": "UTG2"
+          },
+          "cells": {
+            "22": {
+              "fill": "att_limp_call"
+            },
+            "33": {
+              "fill": "att_limp_call"
+            },
+            "44": {
+              "fill": "att_limp_call"
+            },
+            "55": {
+              "fill": "att_limp_call"
+            },
+            "66": {
+              "fill": "att_limp_call"
+            },
+            "77": {
+              "fill": "att_limp_call"
+            },
+            "88": {
+              "fill": "att_limp_call"
+            },
+            "99": {
+              "fill": "att_limp_call"
+            },
+            "AQs": {
+              "fill": "att_open_fold",
+              "outline": "att_6bb"
+            },
+            "KQs": {
+              "fill": "att_open_fold"
+            },
+            "AQo": {
+              "fill": "att_open_fold"
+            },
+            "JJ": {
+              "fill": "att_open_fold",
+              "outline": "att_6bb"
+            },
+            "TT": {
+              "fill": "att_open_fold",
+              "outline": "att_6bb"
+            },
+            "AJs": {
+              "fill": "att_open_fold"
+            },
+            "KJs": {
+              "fill": "att_open_fold"
+            },
+            "ATs": {
+              "fill": "att_open_fold"
+            },
+            "AA": {
+              "fill": "att_4bet_call",
+              "outline": "att_6bb"
+            },
+            "KK": {
+              "fill": "att_4bet_call",
+              "outline": "att_6bb"
+            },
+            "AKo": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "AKs": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "QQ": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "ATo": {
+              "fill": "att_limp_fold"
+            },
+            "AJo": {
+              "fill": "att_limp_fold"
+            },
+            "KJo": {
+              "fill": "att_limp_fold"
+            },
+            "KQo": {
+              "fill": "att_limp_fold"
+            },
+            "QTs": {
+              "fill": "att_limp_fold"
+            },
+            "Q9s": {
+              "fill": "att_limp_fold"
+            },
+            "J9s": {
+              "fill": "att_limp_fold"
+            },
+            "K9s": {
+              "fill": "att_limp_fold"
+            },
+            "A9s": {
+              "fill": "att_limp_fold"
+            },
+            "A6s": {
+              "fill": "att_limp_fold"
+            },
+            "K7s": {
+              "fill": "att_limp_fold"
+            },
+            "K8s": {
+              "fill": "att_limp_fold"
+            },
+            "A8s": {
+              "fill": "att_limp_fold"
+            },
+            "A7s": {
+              "fill": "att_limp_fold"
+            },
+            "T8s": {
+              "fill": "att_limp_fold"
+            },
+            "97s": {
+              "fill": "att_limp_fold"
+            },
+            "T9s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "98s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "87s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "76s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "65s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "54s": {
+              "fill": "att_limp_fold"
+            },
+            "JTs": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "QJs": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "KTs": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "A5s": {
+              "fill": "att_limp_fold",
+              "fillSecondary": "att_limp_rr"
+            },
+            "A4s": {
+              "fill": "att_limp_fold",
+              "fillSecondary": "att_limp_rr"
+            },
+            "A3s": {
+              "fill": "att_limp_fold",
+              "fillSecondary": "att_limp_rr"
+            },
+            "A2s": {
+              "fill": "att_limp_fold",
+              "fillSecondary": "att_limp_rr"
+            }
+          }
+        },
+        {
+          "id": "p84qbchs",
+          "coords": {
+            "position": "MP"
+          },
+          "cells": {
+            "22": {
+              "fill": "att_limp_call"
+            },
+            "33": {
+              "fill": "att_limp_call"
+            },
+            "44": {
+              "fill": "att_limp_call"
+            },
+            "55": {
+              "fill": "att_limp_call"
+            },
+            "66": {
+              "fill": "att_limp_call"
+            },
+            "77": {
+              "fill": "att_limp_call"
+            },
+            "88": {
+              "fill": "att_open_call"
+            },
+            "99": {
+              "fill": "att_open_call"
+            },
+            "JTs": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "A9s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "A8s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "A7s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "A6s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "T9s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "98s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "87s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "76s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "65s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "54s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "97s": {
+              "fill": "att_limp_fold"
+            },
+            "T8s": {
+              "fill": "att_limp_fold"
+            },
+            "J9s": {
+              "fill": "att_limp_fold"
+            },
+            "K9s": {
+              "fill": "att_limp_fold"
+            },
+            "Q9s": {
+              "fill": "att_limp_fold"
+            },
+            "Q8s": {
+              "fill": "att_limp_fold"
+            },
+            "K8s": {
+              "fill": "att_limp_fold"
+            },
+            "K7s": {
+              "fill": "att_limp_fold"
+            },
+            "K6s": {
+              "fill": "att_limp_fold"
+            },
+            "KJo": {
+              "fill": "att_limp_fold"
+            },
+            "QJo": {
+              "fill": "att_limp_fold"
+            },
+            "QTo": {
+              "fill": "att_limp_fold"
+            },
+            "KTo": {
+              "fill": "att_limp_fold"
+            },
+            "JTo": {
+              "fill": "att_limp_fold"
+            },
+            "ATo": {
+              "fill": "att_limp_fold"
+            },
+            "AJo": {
+              "fill": "att_open_fold"
+            },
+            "AQo": {
+              "fill": "att_open_fold"
+            },
+            "KQo": {
+              "fill": "att_open_fold"
+            },
+            "KQs": {
+              "fill": "att_open_fold"
+            },
+            "AJs": {
+              "fill": "att_open_fold"
+            },
+            "ATs": {
+              "fill": "att_open_fold"
+            },
+            "KTs": {
+              "fill": "att_open_fold"
+            },
+            "KJs": {
+              "fill": "att_open_fold"
+            },
+            "QJs": {
+              "fill": "att_open_fold"
+            },
+            "AA": {
+              "fill": "att_4bet_call",
+              "outline": "att_6bb"
+            },
+            "KK": {
+              "fill": "att_4bet_call",
+              "outline": "att_6bb"
+            },
+            "AKo": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "AKs": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "AQs": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "QQ": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "JJ": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "TT": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "QTs": {
+              "fill": "att_limp_fold"
+            },
+            "A5s": {
+              "fill": "att_limp_rr",
+              "fillSecondary": "att_limp_fold"
+            },
+            "A4s": {
+              "fill": "att_limp_rr",
+              "fillSecondary": "att_limp_fold"
+            },
+            "A3s": {
+              "fill": "att_limp_rr",
+              "fillSecondary": "att_limp_fold"
+            },
+            "A2s": {
+              "fill": "att_limp_rr",
+              "fillSecondary": "att_limp_fold"
+            }
+          }
+        },
+        {
+          "id": "pzwzo5ik",
+          "coords": {
+            "position": "HJ"
+          },
+          "cells": {
+            "22": {
+              "fill": "att_limp_call"
+            },
+            "33": {
+              "fill": "att_limp_call"
+            },
+            "44": {
+              "fill": "att_limp_call"
+            },
+            "55": {
+              "fill": "att_limp_call"
+            },
+            "66": {
+              "fill": "att_limp_call"
+            },
+            "77": {
+              "fill": "att_limp_call"
+            },
+            "88": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "99": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "AJs": {
+              "fill": "att_open_fold",
+              "outline": "att_6bb"
+            },
+            "KQs": {
+              "fill": "att_open_fold",
+              "outline": "att_6bb"
+            },
+            "KQo": {
+              "fill": "att_open_fold"
+            },
+            "AQo": {
+              "fill": "att_open_fold",
+              "outline": "att_6bb"
+            },
+            "AJo": {
+              "fill": "att_open_fold"
+            },
+            "ATo": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "A9o": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "KJo": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "KTo": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "QTo": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "QJo": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "QQ": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "JJ": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "TT": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "AKo": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "AKs": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "AA": {
+              "fill": "att_4bet_call",
+              "outline": "att_6bb"
+            },
+            "KK": {
+              "fill": "att_4bet_call",
+              "outline": "att_6bb"
+            },
+            "AQs": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "A5s": {
+              "fill": "att_limp_rr",
+              "fillSecondary": "att_limp_fold"
+            },
+            "A4s": {
+              "fill": "att_limp_rr",
+              "fillSecondary": "att_limp_fold"
+            },
+            "A3s": {
+              "fill": "att_limp_rr",
+              "fillSecondary": "att_limp_fold"
+            },
+            "A2s": {
+              "fill": "att_limp_rr",
+              "fillSecondary": "att_limp_fold"
+            },
+            "A9s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "A8s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "A7s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "A6s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "ATs": {
+              "fill": "att_open_fold"
+            },
+            "KJs": {
+              "fill": "att_open_fold"
+            },
+            "KTs": {
+              "fill": "att_open_fold"
+            },
+            "K9s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "K8s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "K4s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "K5s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "K6s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "K7s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "Q6s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "Q7s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "Q8s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "Q9s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "QTs": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "QJs": {
+              "fill": "att_open_fold"
+            },
+            "J8s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "J9s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "JTs": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "T8s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "T9s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "98s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "87s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "76s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "65s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "54s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "JTo": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "97s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "86s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "75s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "43s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            }
+          }
+        },
+        {
+          "id": "pz6jcoz4",
+          "coords": {
+            "position": "CO"
+          },
+          "cells": {
+            "22": {
+              "fill": "att_limp_call"
+            },
+            "33": {
+              "fill": "att_limp_call"
+            },
+            "44": {
+              "fill": "att_limp_call"
+            },
+            "55": {
+              "fill": "att_limp_call"
+            },
+            "66": {
+              "fill": "att_open_call"
+            },
+            "77": {
+              "fill": "att_open_call"
+            },
+            "88": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "99": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "AA": {
+              "fill": "att_4bet_call",
+              "outline": "att_6bb"
+            },
+            "KK": {
+              "fill": "att_4bet_call",
+              "outline": "att_6bb"
+            },
+            "AKo": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "AKs": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "AQs": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "ATs": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "AJs": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "KQs": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "QQ": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "QJs": {
+              "fill": "att_open_call"
+            },
+            "JJ": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "JTs": {
+              "fill": "att_open_call"
+            },
+            "TT": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "T9s": {
+              "fill": "att_limp_call"
+            },
+            "98s": {
+              "fill": "att_limp_call"
+            },
+            "54s": {
+              "fill": "att_limp_call"
+            },
+            "65s": {
+              "fill": "att_limp_call"
+            },
+            "76s": {
+              "fill": "att_limp_call"
+            },
+            "87s": {
+              "fill": "att_limp_call"
+            },
+            "A9s": {
+              "fill": "att_limp_call"
+            },
+            "A7s": {
+              "fill": "att_limp_call"
+            },
+            "A8s": {
+              "fill": "att_limp_call"
+            },
+            "A6s": {
+              "fill": "att_limp_call"
+            },
+            "A5s": {
+              "fill": "att_limp_rr",
+              "fillSecondary": "att_limp_call"
+            },
+            "A4s": {
+              "fill": "att_limp_rr",
+              "fillSecondary": "att_limp_call"
+            },
+            "A3s": {
+              "fill": "att_limp_rr",
+              "fillSecondary": "att_limp_call"
+            },
+            "A2s": {
+              "fill": "att_limp_rr",
+              "fillSecondary": "att_limp_call"
+            },
+            "AQo": {
+              "fill": "att_open_fold",
+              "outline": "att_6bb"
+            },
+            "A7o": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "A8o": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "A9o": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "ATo": {
+              "fill": "att_open_fold"
+            },
+            "AJo": {
+              "fill": "att_open_fold",
+              "outline": "att_6bb"
+            },
+            "K8o": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "K9o": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "KTo": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "KJo": {
+              "fill": "att_open_fold"
+            },
+            "KQo": {
+              "fill": "att_open_fold",
+              "outline": "att_6bb"
+            },
+            "Q9o": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "J9o": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "T9o": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "JTo": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "QTo": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "QJo": {
+              "fill": "att_open_fold"
+            },
+            "KJs": {
+              "fill": "att_open_fold"
+            },
+            "K2s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "Q5s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "QTs": {
+              "fill": "att_open_fold"
+            },
+            "J7s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "J9s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "T7s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "T8s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "97s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "86s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "75s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "J8s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "Q8s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "Q7s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "Q9s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "Q6s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "K3s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "K6s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "K5s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "K4s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "K7s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "K8s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "K9s": {
+              "fill": "att_open_fold"
+            },
+            "KTs": {
+              "fill": "att_open_fold"
+            },
+            "43s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            }
+          }
+        },
+        {
+          "id": "pk2yxodj",
+          "coords": {
+            "position": "BTN"
+          },
+          "cells": {
+            "22": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_call"
+            },
+            "33": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_call"
+            },
+            "44": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_call"
+            },
+            "55": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_call"
+            },
+            "66": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_call"
+            },
+            "77": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_call"
+            },
+            "88": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "99": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "JJ": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "TT": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "KK": {
+              "fill": "att_4bet_call",
+              "outline": "att_6bb"
+            },
+            "AA": {
+              "fill": "att_4bet_call",
+              "outline": "att_6bb"
+            },
+            "AKo": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "AKs": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "ATs": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "AJs": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "AQs": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "QJs": {
+              "fill": "att_open_call"
+            },
+            "KQs": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "KJs": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "QQ": {
+              "fill": "att_4bet_call",
+              "outline": "att_6bb"
+            },
+            "JTs": {
+              "fill": "att_open_call"
+            },
+            "T9s": {
+              "fill": "att_open_call"
+            },
+            "98s": {
+              "fill": "att_open_call"
+            },
+            "A5s": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "A4s": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "A3s": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "A2s": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "A9s": {
+              "fill": "att_open_fold"
+            },
+            "A8s": {
+              "fill": "att_open_fold"
+            },
+            "A7s": {
+              "fill": "att_open_fold"
+            },
+            "A6s": {
+              "fill": "att_open_fold"
+            },
+            "KTs": {
+              "fill": "att_open_fold"
+            },
+            "K9s": {
+              "fill": "att_open_fold"
+            },
+            "K2s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "K4s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "K3s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "K6s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "K5s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "K7s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "K8s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "Q9s": {
+              "fill": "att_open_fold"
+            },
+            "Q8s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "Q7s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "Q6s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "Q5s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "J9s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "J8s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "J7s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "J6s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "T8s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "T7s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "T6s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "97s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "AJo": {
+              "fill": "att_open_fold",
+              "outline": "att_6bb"
+            },
+            "KJo": {
+              "fill": "att_open_fold"
+            },
+            "KQo": {
+              "fill": "att_open_fold",
+              "outline": "att_6bb"
+            },
+            "QJo": {
+              "fill": "att_open_fold"
+            },
+            "JTo": {
+              "fill": "att_open_fold"
+            },
+            "QTo": {
+              "fill": "att_open_fold"
+            },
+            "KTo": {
+              "fill": "att_open_fold"
+            },
+            "ATo": {
+              "fill": "att_open_fold"
+            },
+            "A9o": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "A8o": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "J8o": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "98o": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "T8o": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "T9o": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "J9o": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "K9o": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "Q9o": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "AQo": {
+              "fill": "att_open_call",
+              "fillSecondary": "att_open_fold",
+              "outline": "att_6bb"
+            },
+            "QTs": {
+              "fill": "att_open_call",
+              "fillSecondary": "att_open_fold"
+            },
+            "86s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "75s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold"
+            },
+            "87s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_call"
+            },
+            "76s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_call"
+            },
+            "65s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_call"
+            },
+            "54s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold",
+              "outline": "att_6bb"
+            },
+            "43s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_limp_fold",
+              "outline": "att_6bb"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "cjteyan7",
+      "name": "Range attaque sur Table Aggro",
+      "type": "attaque",
+      "ranges": [
+        {
+          "id": "ryxjgq3f",
+          "coords": {
+            "position": "UTG"
+          },
+          "cells": {
+            "JJ": {
+              "fill": "att_limp_rr"
+            },
+            "QQ": {
+              "fill": "att_limp_rr"
+            },
+            "KK": {
+              "fill": "att_limp_rr"
+            },
+            "AA": {
+              "fill": "att_limp_rr"
+            },
+            "AKo": {
+              "fill": "att_limp_rr"
+            },
+            "AKs": {
+              "fill": "att_limp_rr"
+            },
+            "KQs": {
+              "fill": "att_limp_call"
+            },
+            "QJs": {
+              "fill": "att_limp_call"
+            },
+            "KJs": {
+              "fill": "att_limp_call"
+            },
+            "AJs": {
+              "fill": "att_limp_call"
+            },
+            "A5s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_rr"
+            },
+            "A4s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_rr"
+            },
+            "A3s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_rr"
+            },
+            "A2s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_rr"
+            },
+            "TT": {
+              "fill": "att_limp_call"
+            },
+            "AQs": {
+              "fill": "att_limp_rr",
+              "fillSecondary": "att_limp_call"
+            },
+            "ATs": {
+              "fill": "att_limp_call"
+            }
+          }
+        },
+        {
+          "id": "r6xn0wy6",
+          "coords": {
+            "position": "UTG1"
+          },
+          "cells": {
+            "JJ": {
+              "fill": "att_limp_rr"
+            },
+            "AKo": {
+              "fill": "att_limp_rr"
+            },
+            "AA": {
+              "fill": "att_limp_rr"
+            },
+            "KK": {
+              "fill": "att_limp_rr"
+            },
+            "QQ": {
+              "fill": "att_limp_rr"
+            },
+            "AKs": {
+              "fill": "att_limp_rr"
+            },
+            "AQs": {
+              "fill": "att_limp_rr",
+              "fillSecondary": "att_limp_call"
+            },
+            "KQs": {
+              "fill": "att_limp_call"
+            },
+            "AJs": {
+              "fill": "att_limp_call"
+            },
+            "ATs": {
+              "fill": "att_limp_call"
+            },
+            "KJs": {
+              "fill": "att_limp_call"
+            },
+            "QJs": {
+              "fill": "att_limp_call"
+            },
+            "TT": {
+              "fill": "att_limp_call"
+            },
+            "AQo": {
+              "fill": "att_limp_fold",
+              "fillSecondary": "att_limp_call"
+            },
+            "A5s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_rr"
+            },
+            "A4s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_rr"
+            },
+            "A3s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_rr"
+            },
+            "A2s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_rr"
+            }
+          }
+        },
+        {
+          "id": "r9ah0w21",
+          "coords": {
+            "position": "UTG2"
+          },
+          "cells": {
+            "99": {
+              "fill": "att_limp_call"
+            },
+            "JJ": {
+              "fill": "att_limp_rr"
+            },
+            "QQ": {
+              "fill": "att_limp_rr"
+            },
+            "TT": {
+              "fill": "att_limp_rr",
+              "fillSecondary": "att_limp_call"
+            },
+            "KK": {
+              "fill": "att_limp_rr"
+            },
+            "AA": {
+              "fill": "att_limp_rr"
+            },
+            "AKs": {
+              "fill": "att_limp_rr"
+            },
+            "AKo": {
+              "fill": "att_limp_rr"
+            },
+            "AQs": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_rr"
+            },
+            "AQo": {
+              "fill": "att_limp_fold",
+              "fillSecondary": "att_limp_call"
+            },
+            "KTs": {
+              "fill": "att_limp_fold",
+              "fillSecondary": "att_limp_call"
+            },
+            "QTs": {
+              "fill": "att_limp_fold",
+              "fillSecondary": "att_limp_call"
+            },
+            "AJs": {
+              "fill": "att_limp_call"
+            },
+            "KJs": {
+              "fill": "att_limp_call"
+            },
+            "QJs": {
+              "fill": "att_limp_call"
+            },
+            "ATs": {
+              "fill": "att_limp_call"
+            },
+            "A5s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_rr"
+            },
+            "A4s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_rr"
+            },
+            "A3s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_rr"
+            },
+            "A2s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_rr"
+            },
+            "KQs": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_rr"
+            }
+          }
+        },
+        {
+          "id": "ral6ftt2",
+          "coords": {
+            "position": "MP"
+          },
+          "cells": {
+            "99": {
+              "fill": "att_limp_call"
+            },
+            "AA": {
+              "fill": "att_limp_rr"
+            },
+            "AKs": {
+              "fill": "att_limp_rr"
+            },
+            "AKo": {
+              "fill": "att_limp_rr"
+            },
+            "KK": {
+              "fill": "att_limp_rr"
+            },
+            "QQ": {
+              "fill": "att_limp_rr"
+            },
+            "JJ": {
+              "fill": "att_limp_rr"
+            },
+            "TT": {
+              "fill": "att_limp_call"
+            },
+            "AQo": {
+              "fill": "att_limp_call"
+            },
+            "KQs": {
+              "fill": "att_limp_call"
+            },
+            "KJs": {
+              "fill": "att_limp_call"
+            },
+            "QJs": {
+              "fill": "att_limp_call"
+            },
+            "QTs": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "KTs": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_fold"
+            },
+            "ATs": {
+              "fill": "att_limp_call"
+            },
+            "AJs": {
+              "fill": "att_limp_call"
+            },
+            "A9s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_rr"
+            },
+            "A8s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_rr"
+            },
+            "A7s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_rr"
+            },
+            "A6s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_rr"
+            },
+            "A5s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_rr"
+            },
+            "A4s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_rr"
+            },
+            "A3s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_rr"
+            },
+            "A2s": {
+              "fill": "att_limp_call",
+              "fillSecondary": "att_limp_rr"
+            },
+            "JTs": {
+              "fill": "att_limp_call"
+            },
+            "AQs": {
+              "fill": "att_limp_rr"
+            }
+          }
+        },
+        {
+          "id": "ruc1c857",
+          "coords": {
+            "position": "HJ"
+          },
+          "cells": {
+            "88": {
+              "fill": "att_open_call"
+            },
+            "99": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "QQ": {
+              "outline": "att_6bb",
+              "fill": "att_open_call",
+              "fillSecondary": "att_4bet_call"
+            },
+            "JJ": {
+              "fill": "att_open_call",
+              "outline": "att_6bb",
+              "fillSecondary": "att_4bet_call"
+            },
+            "TT": {
+              "fill": "att_open_call",
+              "outline": "att_6bb",
+              "fillSecondary": "att_4bet_call"
+            },
+            "AQs": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "KQs": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "AJs": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "AKo": {
+              "fill": "att_open_call",
+              "fillSecondary": "att_4bet_call",
+              "outline": "att_6bb"
+            },
+            "AKs": {
+              "fill": "att_open_call",
+              "fillSecondary": "att_4bet_call",
+              "outline": "att_6bb"
+            },
+            "AA": {
+              "fill": "att_4bet_call",
+              "outline": "att_6bb"
+            },
+            "KK": {
+              "fill": "att_4bet_call",
+              "outline": "att_6bb"
+            },
+            "AQo": {
+              "fill": "att_open_fold",
+              "outline": "att_6bb",
+              "fillSecondary": "att_4bet_fold"
+            },
+            "AJo": {
+              "fill": "att_open_fold"
+            },
+            "KQo": {
+              "fill": "att_open_fold"
+            },
+            "QJs": {
+              "fill": "att_open_fold"
+            },
+            "KJs": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_4bet_fold"
+            },
+            "ATs": {
+              "fill": "att_open_fold"
+            },
+            "A9s": {
+              "fill": "att_open_fold"
+            },
+            "A2s": {
+              "fill": "att_open_fold"
+            },
+            "KTs": {
+              "fill": "att_open_fold"
+            },
+            "QTs": {
+              "fill": "att_open_fold"
+            },
+            "JTs": {
+              "fill": "att_open_fold"
+            },
+            "A8s": {
+              "fill": "att_open_fold"
+            },
+            "A7s": {
+              "fill": "att_open_fold"
+            },
+            "A6s": {
+              "fill": "att_open_fold"
+            },
+            "A4s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_4bet_fold"
+            },
+            "A3s": {
+              "fill": "att_open_fold"
+            },
+            "A5s": {
+              "fill": "att_open_fold",
+              "fillSecondary": "att_4bet_fold"
+            }
+          }
+        },
+        {
+          "id": "ryu9nw2b",
+          "coords": {
+            "position": "CO"
+          },
+          "cells": {
+            "55": {
+              "fill": "att_open_call"
+            },
+            "66": {
+              "fill": "att_open_call"
+            },
+            "77": {
+              "fill": "att_open_call"
+            },
+            "88": {
+              "fill": "att_open_call"
+            },
+            "99": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "KQo": {
+              "fill": "att_open_fold"
+            },
+            "A9o": {
+              "fill": "att_open_fold"
+            },
+            "JTo": {
+              "fill": "att_open_fold"
+            },
+            "AJo": {
+              "fill": "att_open_fold"
+            },
+            "KJo": {
+              "fill": "att_open_fold"
+            },
+            "QJo": {
+              "fill": "att_open_fold"
+            },
+            "QTo": {
+              "fill": "att_open_fold"
+            },
+            "KTo": {
+              "fill": "att_open_fold"
+            },
+            "ATo": {
+              "fill": "att_open_fold"
+            },
+            "QJs": {
+              "fill": "att_open_fold"
+            },
+            "JTs": {
+              "fill": "att_open_fold"
+            },
+            "J9s": {
+              "fill": "att_open_fold"
+            },
+            "J8s": {
+              "fill": "att_open_fold"
+            },
+            "A8s": {
+              "fill": "att_open_fold"
+            },
+            "K8s": {
+              "fill": "att_open_fold"
+            },
+            "Q8s": {
+              "fill": "att_open_fold"
+            },
+            "A4s": {
+              "fill": "att_open_fold"
+            },
+            "A6s": {
+              "fill": "att_open_fold"
+            },
+            "A7s": {
+              "fill": "att_open_fold"
+            },
+            "A3s": {
+              "fill": "att_open_fold"
+            },
+            "A2s": {
+              "fill": "att_open_fold"
+            },
+            "A9s": {
+              "fill": "att_open_fold"
+            },
+            "K9s": {
+              "fill": "att_open_fold"
+            },
+            "K5s": {
+              "fill": "att_open_fold"
+            },
+            "K6s": {
+              "fill": "att_open_fold"
+            },
+            "K7s": {
+              "fill": "att_open_fold"
+            },
+            "Q9s": {
+              "fill": "att_open_fold"
+            },
+            "QTs": {
+              "fill": "att_open_fold"
+            },
+            "98s": {
+              "fill": "att_open_fold"
+            },
+            "T9s": {
+              "fill": "att_open_fold"
+            },
+            "QQ": {
+              "fill": "att_open_call",
+              "fillSecondary": "att_4bet_call",
+              "outline": "att_6bb"
+            },
+            "JJ": {
+              "fill": "att_open_call",
+              "fillSecondary": "att_4bet_call",
+              "outline": "att_6bb"
+            },
+            "TT": {
+              "fill": "att_open_call",
+              "fillSecondary": "att_4bet_call",
+              "outline": "att_6bb"
+            },
+            "AKo": {
+              "fill": "att_open_call",
+              "fillSecondary": "att_4bet_call",
+              "outline": "att_6bb"
+            },
+            "AKs": {
+              "fill": "att_open_call",
+              "fillSecondary": "att_4bet_call",
+              "outline": "att_6bb"
+            },
+            "AQs": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "AJs": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "ATs": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "KQs": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "KJs": {
+              "fill": "att_open_call",
+              "fillSecondary": "att_4bet_fold"
+            },
+            "KTs": {
+              "fill": "att_open_call",
+              "fillSecondary": "att_4bet_fold"
+            },
+            "A5s": {
+              "fill": "att_open_call",
+              "fillSecondary": "att_4bet_fold"
+            },
+            "AQo": {
+              "fill": "att_open_call",
+              "fillSecondary": "att_4bet_fold",
+              "outline": "att_6bb"
+            },
+            "AA": {
+              "fill": "att_4bet_call",
+              "outline": "att_6bb"
+            },
+            "KK": {
+              "fill": "att_4bet_call",
+              "outline": "att_6bb"
+            }
+          }
+        },
+        {
+          "id": "rb0y6657",
+          "coords": {
+            "position": "BTN"
+          },
+          "cells": {
+            "33": {
+              "fill": "att_open_call"
+            },
+            "44": {
+              "fill": "att_open_call"
+            },
+            "55": {
+              "fill": "att_open_call"
+            },
+            "66": {
+              "fill": "att_open_call"
+            },
+            "77": {
+              "fill": "att_open_call"
+            },
+            "88": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "99": {
+              "fill": "att_open_call",
+              "fillSecondary": "att_4bet_call",
+              "outline": "att_6bb"
+            },
+            "A7o": {
+              "fill": "att_open_fold"
+            },
+            "ATo": {
+              "fill": "att_open_fold"
+            },
+            "KJo": {
+              "fill": "att_open_fold"
+            },
+            "QJo": {
+              "fill": "att_open_fold"
+            },
+            "QQ": {
+              "fill": "att_open_call",
+              "fillSecondary": "att_4bet_call",
+              "outline": "att_6bb"
+            },
+            "JJ": {
+              "fill": "att_open_call",
+              "fillSecondary": "att_4bet_call",
+              "outline": "att_6bb"
+            },
+            "TT": {
+              "fill": "att_open_call",
+              "fillSecondary": "att_4bet_call",
+              "outline": "att_6bb"
+            },
+            "KK": {
+              "fill": "att_4bet_call",
+              "outline": "att_6bb"
+            },
+            "AA": {
+              "fill": "att_4bet_call",
+              "outline": "att_6bb"
+            },
+            "AKo": {
+              "fill": "att_open_call",
+              "fillSecondary": "att_4bet_call",
+              "outline": "att_6bb"
+            },
+            "AKs": {
+              "fill": "att_open_call",
+              "fillSecondary": "att_4bet_call",
+              "outline": "att_6bb"
+            },
+            "AQs": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "AJs": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "ATs": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "A9s": {
+              "fill": "att_open_call"
+            },
+            "KTs": {
+              "fill": "att_open_call"
+            },
+            "KJs": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "KQs": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "QTs": {
+              "fill": "att_open_call",
+              "fillSecondary": "att_4bet_fold"
+            },
+            "QJs": {
+              "fill": "att_open_call"
+            },
+            "A5s": {
+              "fill": "att_open_call",
+              "fillSecondary": "att_4bet_fold"
+            },
+            "A8s": {
+              "fill": "att_open_fold"
+            },
+            "A7s": {
+              "fill": "att_open_fold"
+            },
+            "A6s": {
+              "fill": "att_open_fold"
+            },
+            "A4s": {
+              "fill": "att_open_fold"
+            },
+            "A3s": {
+              "fill": "att_open_fold"
+            },
+            "A2s": {
+              "fill": "att_open_fold"
+            },
+            "K2s": {
+              "fill": "att_open_fold"
+            },
+            "K3s": {
+              "fill": "att_open_fold"
+            },
+            "K4s": {
+              "fill": "att_open_fold"
+            },
+            "K5s": {
+              "fill": "att_open_fold"
+            },
+            "K6s": {
+              "fill": "att_open_fold"
+            },
+            "K7s": {
+              "fill": "att_open_fold"
+            },
+            "K8s": {
+              "fill": "att_open_fold"
+            },
+            "K9s": {
+              "fill": "att_open_fold"
+            },
+            "Q9s": {
+              "fill": "att_open_fold"
+            },
+            "Q8s": {
+              "fill": "att_open_fold"
+            },
+            "Q7s": {
+              "fill": "att_open_fold"
+            },
+            "Q6s": {
+              "fill": "att_open_fold"
+            },
+            "Q5s": {
+              "fill": "att_open_fold"
+            },
+            "Q4s": {
+              "fill": "att_open_fold"
+            },
+            "J6s": {
+              "fill": "att_open_fold"
+            },
+            "J7s": {
+              "fill": "att_open_fold"
+            },
+            "J9s": {
+              "fill": "att_open_fold"
+            },
+            "J8s": {
+              "fill": "att_open_fold"
+            },
+            "JTs": {
+              "fill": "att_open_call"
+            },
+            "T9s": {
+              "fill": "att_open_call"
+            },
+            "98s": {
+              "fill": "att_open_fold"
+            },
+            "87s": {
+              "fill": "att_open_fold"
+            },
+            "76s": {
+              "fill": "att_open_fold"
+            },
+            "97s": {
+              "fill": "att_open_fold"
+            },
+            "T7s": {
+              "fill": "att_open_fold"
+            },
+            "T8s": {
+              "fill": "att_open_fold"
+            },
+            "A8o": {
+              "fill": "att_open_fold"
+            },
+            "A9o": {
+              "fill": "att_open_fold"
+            },
+            "AJo": {
+              "fill": "att_open_call",
+              "fillSecondary": "att_4bet_fold",
+              "outline": "att_6bb"
+            },
+            "AQo": {
+              "fill": "att_open_call",
+              "fillSecondary": "att_4bet_fold",
+              "outline": "att_6bb"
+            },
+            "KQo": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "KTo": {
+              "fill": "att_open_fold"
+            },
+            "QTo": {
+              "fill": "att_open_fold"
+            },
+            "JTo": {
+              "fill": "att_open_fold"
+            },
+            "T9o": {
+              "fill": "att_open_fold"
+            },
+            "J9o": {
+              "fill": "att_open_fold"
+            },
+            "Q9o": {
+              "fill": "att_open_fold"
+            },
+            "K9o": {
+              "fill": "att_open_fold"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "cvwuekhk",
+      "name": "Défense en position libre (btn/co...)",
+      "type": "defense",
+      "ranges": [
+        {
+          "id": "r5y9h0a3",
+          "coords": {
+            "sizing": "vs 3bb",
+            "villain": "vs 10%"
+          },
+          "cells": {
+            "22": {
+              "fill": "def_call"
+            },
+            "33": {
+              "fill": "def_call"
+            },
+            "44": {
+              "fill": "def_call"
+            },
+            "55": {
+              "fill": "def_call"
+            },
+            "66": {
+              "fill": "def_call"
+            },
+            "77": {
+              "fillSecondary": "def_call"
+            },
+            "88": {
+              "fillSecondary": "def_call"
+            },
+            "99": {
+              "fillSecondary": "def_call"
+            },
+            "AKo": {
+              "fill": "def_call"
+            },
+            "ATs": {
+              "fill": "def_call",
+              "fillSecondary": "def_call"
+            },
+            "AJs": {
+              "fill": "def_call"
+            },
+            "AQs": {
+              "fill": "def_call"
+            },
+            "KQs": {
+              "fill": "def_call"
+            },
+            "KJs": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "KTs": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "A5s": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "A4s": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "A3s": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "QQ": {
+              "fill": "def_call"
+            },
+            "JJ": {
+              "fill": "def_call"
+            },
+            "TT": {
+              "fill": "def_call"
+            },
+            "76s": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "65s": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "54s": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "AQo": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "AA": {
+              "fill": "def_5bet_allin"
+            },
+            "AKs": {
+              "fill": "def_5bet_allin"
+            },
+            "KK": {
+              "fill": "def_5bet_allin"
+            }
+          }
+        },
+        {
+          "id": "r6apjbfa",
+          "coords": {
+            "sizing": "vs 6bb",
+            "villain": "vs 10%"
+          },
+          "cells": {
+            "AKs": {
+              "fill": "def_5bet_allin"
+            },
+            "KK": {
+              "fill": "def_5bet_allin"
+            },
+            "AA": {
+              "fill": "def_5bet_allin"
+            },
+            "AQs": {
+              "fill": "def_call"
+            },
+            "KQs": {
+              "fill": "def_call"
+            },
+            "QQ": {
+              "fill": "def_call"
+            },
+            "AKo": {
+              "fill": "def_call"
+            },
+            "AQo": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "JJ": {
+              "fillSecondary": "def_call"
+            },
+            "TT": {
+              "fillSecondary": "def_call"
+            },
+            "AJs": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            }
+          }
+        },
+        {
+          "id": "r3ny2484",
+          "coords": {
+            "sizing": "vs 3bb",
+            "villain": "vs 20%"
+          },
+          "cells": {
+            "22": {
+              "fillSecondary": "def_call"
+            },
+            "33": {
+              "fillSecondary": "def_call"
+            },
+            "44": {
+              "fillSecondary": "def_call"
+            },
+            "55": {
+              "fillSecondary": "def_call"
+            },
+            "66": {
+              "fillSecondary": "def_call"
+            },
+            "77": {
+              "fillSecondary": "def_call"
+            },
+            "88": {
+              "fillSecondary": "def_call"
+            },
+            "99": {
+              "fill": "def_call"
+            },
+            "TT": {
+              "fill": "def_call"
+            },
+            "QQ": {
+              "fill": "def_raise_call4"
+            },
+            "JJ": {
+              "fill": "def_raise_call4"
+            },
+            "AKo": {
+              "fill": "def_raise_call4"
+            },
+            "AKs": {
+              "fill": "def_5bet_allin"
+            },
+            "KK": {
+              "fill": "def_5bet_allin"
+            },
+            "AA": {
+              "fill": "def_5bet_allin"
+            },
+            "AQo": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "KQo": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "AQs": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_raise_call4"
+            },
+            "KJs": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "QJs": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "KTs": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "QTs": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "A9s": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "A5s": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "A4s": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "A3s": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "AJs": {
+              "fill": "def_call"
+            },
+            "ATs": {
+              "fill": "def_call"
+            },
+            "KQs": {
+              "fill": "def_call"
+            },
+            "76s": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "65s": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "54s": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            }
+          }
+        },
+        {
+          "id": "r9pi7vnx",
+          "coords": {
+            "sizing": "vs 3bb",
+            "villain": "vs 40%"
+          },
+          "cells": {
+            "22": {
+              "fill": "def_call"
+            },
+            "33": {
+              "fill": "def_call"
+            },
+            "44": {
+              "fill": "def_call"
+            },
+            "55": {
+              "fill": "def_call"
+            },
+            "66": {
+              "fill": "def_call"
+            },
+            "77": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "88": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "99": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "AA": {
+              "fill": "def_5bet_allin"
+            },
+            "KK": {
+              "fill": "def_5bet_allin"
+            },
+            "AKs": {
+              "fill": "def_5bet_allin"
+            },
+            "QQ": {
+              "fill": "def_5bet_allin"
+            },
+            "AKo": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_5bet_allin"
+            },
+            "KQs": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "AQs": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "AJs": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "ATs": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "AQo": {
+              "fill": "def_raise_fold4"
+            },
+            "AJo": {
+              "fill": "def_raise_fold4"
+            },
+            "ATo": {
+              "fill": "def_raise_fold4"
+            },
+            "KQo": {
+              "fill": "def_raise_fold4"
+            },
+            "KJo": {
+              "fill": "def_raise_fold4"
+            },
+            "KTo": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "QTo": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "QJo": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "JTo": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "QJs": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "JJ": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_5bet_allin"
+            },
+            "A9s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A8s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A7s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A6s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A5s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A4s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A3s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A2s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "K9s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "KTs": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "KJs": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "QTs": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "JTs": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "K8s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "K7s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "K6s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "Q8s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "Q9s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "J9s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "T8s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "T9s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "TT": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_5bet_allin"
+            },
+            "54s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "65s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "64s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "75s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "86s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "97s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "87s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "98s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "76s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            }
+          }
+        },
+        {
+          "id": "rd6d6rco",
+          "coords": {
+            "sizing": "vs 6bb",
+            "villain": "vs 40%"
+          },
+          "cells": {
+            "22": {
+              "fill": "def_call"
+            },
+            "33": {
+              "fill": "def_call"
+            },
+            "44": {
+              "fill": "def_call"
+            },
+            "55": {
+              "fill": "def_call"
+            },
+            "66": {
+              "fill": "def_call"
+            },
+            "77": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "88": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "99": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "QJo": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "KTo": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A9o": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "K9o": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "JTo": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "QTo": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "Q9o": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "J9o": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "T9o": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "98o": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "87o": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "53s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "43s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "74s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "64s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "85s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "75s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "86s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "96s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "T7s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "J7s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "Q7s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "K7s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "K6s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "K5s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "K4s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "K3s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "K2s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "Q5s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "Q6s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "J9s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "J8s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "Q9s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "K8s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "Q8s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "T8s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "AKo": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_5bet_allin"
+            },
+            "KQs": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "AQs": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "AJs": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "ATs": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "JJ": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_5bet_allin"
+            },
+            "TT": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_5bet_allin"
+            },
+            "AKs": {
+              "fill": "def_5bet_allin"
+            },
+            "AA": {
+              "fill": "def_5bet_allin"
+            },
+            "KK": {
+              "fill": "def_5bet_allin"
+            },
+            "QQ": {
+              "fill": "def_5bet_allin"
+            },
+            "54s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "JTs": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "T9s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "98s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "87s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "76s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "65s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "AQo": {
+              "fill": "def_raise_fold4"
+            },
+            "KQo": {
+              "fill": "def_raise_fold4"
+            },
+            "KJo": {
+              "fill": "def_raise_fold4"
+            },
+            "AJo": {
+              "fill": "def_raise_fold4"
+            },
+            "ATo": {
+              "fill": "def_raise_fold4"
+            },
+            "A9s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A8s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A7s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A6s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A5s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A2s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A3s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A4s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "KJs": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "KTs": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "K9s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "QJs": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "QTs": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "97s": {
+              "fillSecondary": "def_raise_fold4"
+            }
+          }
+        },
+        {
+          "id": "rwo80976",
+          "coords": {
+            "sizing": "vs 6bb",
+            "villain": "vs 20%"
+          },
+          "cells": {
+            "99": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "QQ": {
+              "fill": "def_5bet_allin"
+            },
+            "AKs": {
+              "fill": "def_5bet_allin"
+            },
+            "KK": {
+              "fill": "def_5bet_allin"
+            },
+            "AA": {
+              "fill": "def_5bet_allin"
+            },
+            "AKo": {
+              "fill": "def_raise_call4"
+            },
+            "AQs": {
+              "fill": "def_call"
+            },
+            "KQs": {
+              "fill": "def_call"
+            },
+            "AJs": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "JJ": {
+              "fill": "def_call"
+            },
+            "TT": {
+              "fill": "def_call"
+            },
+            "JTs": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "QJs": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "cw7d7ku5",
+      "name": "Défense en SB",
+      "type": "defense",
+      "ranges": [
+        {
+          "id": "rnuxu3jn",
+          "coords": {
+            "sizing": "vs 3bb",
+            "villain": "vs 10%"
+          },
+          "cells": {
+            "22": {
+              "fillSecondary": "def_call"
+            },
+            "33": {
+              "fillSecondary": "def_call"
+            },
+            "44": {
+              "fillSecondary": "def_call"
+            },
+            "55": {
+              "fillSecondary": "def_call"
+            },
+            "66": {
+              "fillSecondary": "def_call"
+            },
+            "77": {
+              "fillSecondary": "def_call"
+            },
+            "88": {
+              "fillSecondary": "def_call"
+            },
+            "99": {
+              "fillSecondary": "def_call"
+            },
+            "AKs": {
+              "fill": "def_raise_call4"
+            },
+            "KK": {
+              "fill": "def_raise_call4"
+            },
+            "AA": {
+              "fill": "def_5bet_allin"
+            },
+            "AKo": {
+              "fill": "def_call"
+            },
+            "AQs": {
+              "fill": "def_call"
+            },
+            "KQs": {
+              "fill": "def_call"
+            },
+            "AJs": {
+              "fill": "def_call"
+            },
+            "QQ": {
+              "fill": "def_call"
+            },
+            "JJ": {
+              "fillSecondary": "def_call"
+            },
+            "TT": {
+              "fillSecondary": "def_call"
+            },
+            "54s": {
+              "fillSecondary": "def_call"
+            },
+            "65s": {
+              "fillSecondary": "def_call"
+            },
+            "76s": {
+              "fillSecondary": "def_call"
+            },
+            "A5s": {
+              "fillSecondary": "def_raise_fold4"
+            }
+          }
+        },
+        {
+          "id": "r755wlug",
+          "coords": {
+            "sizing": "vs 3bb",
+            "villain": "vs 20%"
+          },
+          "cells": {
+            "22": {
+              "fillSecondary": "def_call"
+            },
+            "33": {
+              "fillSecondary": "def_call"
+            },
+            "44": {
+              "fillSecondary": "def_call"
+            },
+            "55": {
+              "fillSecondary": "def_call"
+            },
+            "66": {
+              "fillSecondary": "def_call"
+            },
+            "77": {
+              "fillSecondary": "def_call"
+            },
+            "88": {
+              "fillSecondary": "def_call"
+            },
+            "99": {
+              "fillSecondary": "def_call"
+            },
+            "AA": {
+              "fill": "def_5bet_allin"
+            },
+            "AKo": {
+              "fill": "def_5bet_allin"
+            },
+            "KK": {
+              "fill": "def_5bet_allin"
+            },
+            "AKs": {
+              "fill": "def_raise_call4"
+            },
+            "AQs": {
+              "fill": "def_raise_call4"
+            },
+            "QQ": {
+              "fill": "def_raise_call4"
+            },
+            "A5s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A4s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A3s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "AQo": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "JJ": {
+              "fill": "def_call"
+            },
+            "QJs": {
+              "fill": "def_call"
+            },
+            "KJs": {
+              "fill": "def_call"
+            },
+            "AJs": {
+              "fill": "def_call"
+            },
+            "KQs": {
+              "fill": "def_call"
+            },
+            "ATs": {
+              "fillSecondary": "def_call"
+            },
+            "KTs": {
+              "fillSecondary": "def_call"
+            },
+            "TT": {
+              "fillSecondary": "def_call"
+            }
+          }
+        },
+        {
+          "id": "r3b4f8o8",
+          "coords": {
+            "sizing": "vs 3bb",
+            "villain": "vs 40%"
+          },
+          "cells": {
+            "22": {
+              "fillSecondary": "def_call"
+            },
+            "33": {
+              "fillSecondary": "def_call"
+            },
+            "44": {
+              "fillSecondary": "def_call"
+            },
+            "55": {
+              "fillSecondary": "def_call"
+            },
+            "66": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "77": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "88": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "99": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "AA": {
+              "fill": "def_5bet_allin"
+            },
+            "AKs": {
+              "fill": "def_5bet_allin"
+            },
+            "KK": {
+              "fill": "def_5bet_allin"
+            },
+            "AKo": {
+              "fill": "def_5bet_allin"
+            },
+            "QQ": {
+              "fill": "def_5bet_allin"
+            },
+            "KQo": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "AJo": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "ATo": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "KJo": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "QJo": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "ATs": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A2s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A3s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A4s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A5s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A6s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A7s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A8s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A9s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "KTs": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "K9s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "AQs": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "AJs": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "KJs": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "KQs": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "AQo": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "JJ": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "TT": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "Q9s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "QJs": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "QTs": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "JTs": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "KTo": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "T9s": {
+              "fillSecondary": "def_raise_fold4"
+            }
+          }
+        },
+        {
+          "id": "rpbprvbc",
+          "coords": {
+            "sizing": "vs 6bb",
+            "villain": "vs 40%"
+          },
+          "cells": {
+            "33": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "44": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "55": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "66": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "77": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "88": {
+              "fill": "def_5bet_allin",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "99": {
+              "fill": "def_5bet_allin",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "AQo": {
+              "fill": "def_5bet_allin"
+            },
+            "AKo": {
+              "fill": "def_5bet_allin"
+            },
+            "AA": {
+              "fill": "def_5bet_allin"
+            },
+            "KK": {
+              "fill": "def_5bet_allin"
+            },
+            "AKs": {
+              "fill": "def_5bet_allin"
+            },
+            "QQ": {
+              "fill": "def_5bet_allin"
+            },
+            "TT": {
+              "fill": "def_5bet_allin",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "JJ": {
+              "fill": "def_5bet_allin",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "AJo": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "KQo": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "QJs": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "KTs": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A9s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "QTs": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "ATs": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "AJs": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "AQs": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "KQs": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "KJs": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "ATo": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "KTo": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "QTo": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "JTo": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "54s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "65s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "76s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "87s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "98s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A8s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A7s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A6s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A5s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A4s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A3s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A2s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "K9s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "Q9s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "J9s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "T9s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "JTs": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "QJo": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "KJo": {
+              "fillSecondary": "def_raise_fold4"
+            }
+          }
+        },
+        {
+          "id": "rg8408bt",
+          "coords": {
+            "sizing": "vs 6bb",
+            "villain": "vs 10%"
+          },
+          "cells": {
+            "AA": {
+              "fill": "def_5bet_allin"
+            },
+            "KK": {
+              "fill": "def_5bet_allin"
+            },
+            "QQ": {
+              "fill": "def_call"
+            },
+            "AKo": {
+              "fill": "def_call"
+            },
+            "AKs": {
+              "fill": "def_call"
+            },
+            "AQs": {
+              "fill": "def_call"
+            }
+          }
+        },
+        {
+          "id": "rk1f75n3",
+          "coords": {
+            "sizing": "vs 6bb",
+            "villain": "vs 20%"
+          },
+          "cells": {
+            "KK": {
+              "fill": "def_5bet_allin"
+            },
+            "AA": {
+              "fill": "def_5bet_allin"
+            },
+            "AKo": {
+              "fill": "def_call"
+            },
+            "AKs": {
+              "fill": "def_call"
+            },
+            "AQs": {
+              "fill": "def_call"
+            },
+            "KQs": {
+              "fill": "def_call"
+            },
+            "QQ": {
+              "fill": "def_call"
+            },
+            "JJ": {
+              "fill": "def_call"
+            },
+            "AJs": {
+              "fillSecondary": "def_raise_fold4"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "c4aqsza7",
+      "name": "Défense en BB",
+      "type": "defense",
+      "ranges": [
+        {
+          "id": "ryf6g8fo",
+          "coords": {
+            "sizing": "vs 3bb",
+            "villain": "vs 10%"
+          },
+          "cells": {
+            "22": {
+              "fill": "def_call"
+            },
+            "33": {
+              "fill": "def_call"
+            },
+            "44": {
+              "fill": "def_call"
+            },
+            "55": {
+              "fill": "def_call"
+            },
+            "66": {
+              "fill": "def_call"
+            },
+            "77": {
+              "fill": "def_call"
+            },
+            "88": {
+              "fill": "def_call"
+            },
+            "99": {
+              "fill": "def_call"
+            },
+            "KK": {
+              "fill": "def_5bet_allin"
+            },
+            "AKs": {
+              "fill": "def_5bet_allin"
+            },
+            "AA": {
+              "fill": "def_5bet_allin"
+            },
+            "AKo": {
+              "fill": "def_call"
+            },
+            "AQo": {
+              "fill": "def_call"
+            },
+            "AQs": {
+              "fill": "def_call"
+            },
+            "KQs": {
+              "fill": "def_call"
+            },
+            "QQ": {
+              "fill": "def_call"
+            },
+            "KJs": {
+              "fill": "def_call"
+            },
+            "AJs": {
+              "fill": "def_call"
+            },
+            "ATs": {
+              "fill": "def_call"
+            },
+            "A4s": {
+              "fill": "def_call"
+            },
+            "A3s": {
+              "fill": "def_call"
+            },
+            "A2s": {
+              "fill": "def_call"
+            },
+            "A9s": {
+              "fillSecondary": "def_call"
+            },
+            "A8s": {
+              "fillSecondary": "def_call"
+            },
+            "A7s": {
+              "fillSecondary": "def_call"
+            },
+            "A6s": {
+              "fillSecondary": "def_call"
+            },
+            "JJ": {
+              "fill": "def_call"
+            },
+            "TT": {
+              "fill": "def_call"
+            },
+            "54s": {
+              "fill": "def_call"
+            },
+            "65s": {
+              "fill": "def_call"
+            },
+            "75s": {
+              "fillSecondary": "def_call"
+            },
+            "J9s": {
+              "fillSecondary": "def_call"
+            },
+            "T9s": {
+              "fill": "def_call"
+            },
+            "T8s": {
+              "fillSecondary": "def_call"
+            },
+            "97s": {
+              "fillSecondary": "def_call"
+            },
+            "86s": {
+              "fillSecondary": "def_call"
+            },
+            "76s": {
+              "fill": "def_call"
+            },
+            "87s": {
+              "fill": "def_call"
+            },
+            "98s": {
+              "fill": "def_call"
+            },
+            "JTs": {
+              "fill": "def_call"
+            },
+            "QTs": {
+              "fillSecondary": "def_call"
+            },
+            "QJs": {
+              "fill": "def_call"
+            },
+            "A5s": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "KTs": {
+              "fillSecondary": "def_raise_fold4"
+            }
+          }
+        },
+        {
+          "id": "rmntyzqn",
+          "coords": {
+            "sizing": "vs 3bb",
+            "villain": "vs 20%"
+          },
+          "cells": {
+            "22": {
+              "fill": "def_call"
+            },
+            "33": {
+              "fill": "def_call"
+            },
+            "44": {
+              "fill": "def_call"
+            },
+            "55": {
+              "fill": "def_call"
+            },
+            "66": {
+              "fill": "def_call"
+            },
+            "77": {
+              "fill": "def_call"
+            },
+            "88": {
+              "fill": "def_call"
+            },
+            "99": {
+              "fill": "def_call"
+            },
+            "JJ": {
+              "fill": "def_call"
+            },
+            "TT": {
+              "fill": "def_call"
+            },
+            "KQs": {
+              "fill": "def_call"
+            },
+            "54s": {
+              "fill": "def_call"
+            },
+            "65s": {
+              "fill": "def_call"
+            },
+            "76s": {
+              "fill": "def_call"
+            },
+            "87s": {
+              "fill": "def_call"
+            },
+            "98s": {
+              "fill": "def_call"
+            },
+            "T9s": {
+              "fill": "def_call"
+            },
+            "JTs": {
+              "fill": "def_call"
+            },
+            "QJs": {
+              "fill": "def_call"
+            },
+            "K9s": {
+              "fill": "def_call"
+            },
+            "Q9s": {
+              "fill": "def_call"
+            },
+            "J9s": {
+              "fill": "def_call"
+            },
+            "KTs": {
+              "fill": "def_call"
+            },
+            "QTs": {
+              "fill": "def_call"
+            },
+            "KJs": {
+              "fill": "def_call"
+            },
+            "AJs": {
+              "fill": "def_call"
+            },
+            "A6s": {
+              "fill": "def_call"
+            },
+            "A7s": {
+              "fill": "def_call"
+            },
+            "A8s": {
+              "fill": "def_call"
+            },
+            "A9s": {
+              "fill": "def_call"
+            },
+            "ATs": {
+              "fill": "def_call"
+            },
+            "ATo": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "KQo": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "A5s": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "A4s": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "A3s": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "A2s": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "AQo": {
+              "fill": "def_call"
+            },
+            "AJo": {
+              "fill": "def_call"
+            },
+            "K8s": {
+              "fillSecondary": "def_call"
+            },
+            "K7s": {
+              "fillSecondary": "def_call"
+            },
+            "K6s": {
+              "fillSecondary": "def_call"
+            },
+            "K5s": {
+              "fillSecondary": "def_call"
+            },
+            "Q8s": {
+              "fillSecondary": "def_call"
+            },
+            "J8s": {
+              "fillSecondary": "def_call"
+            },
+            "T8s": {
+              "fillSecondary": "def_call"
+            },
+            "97s": {
+              "fillSecondary": "def_call"
+            },
+            "53s": {
+              "fillSecondary": "def_call"
+            },
+            "43s": {
+              "fillSecondary": "def_call"
+            },
+            "64s": {
+              "fillSecondary": "def_call"
+            },
+            "75s": {
+              "fillSecondary": "def_call"
+            },
+            "86s": {
+              "fillSecondary": "def_call"
+            },
+            "AA": {
+              "fill": "def_5bet_allin"
+            },
+            "KK": {
+              "fill": "def_5bet_allin"
+            },
+            "AKs": {
+              "fill": "def_5bet_allin"
+            },
+            "AKo": {
+              "fill": "def_raise_call4"
+            },
+            "AQs": {
+              "fill": "def_raise_call4"
+            },
+            "QQ": {
+              "fill": "def_raise_call4"
+            }
+          }
+        },
+        {
+          "id": "ro5nq8f3",
+          "coords": {
+            "sizing": "vs 3bb",
+            "villain": "vs 40%"
+          },
+          "cells": {
+            "22": {
+              "fill": "def_call"
+            },
+            "33": {
+              "fill": "def_call"
+            },
+            "44": {
+              "fill": "def_call"
+            },
+            "55": {
+              "fill": "def_call"
+            },
+            "66": {
+              "fill": "def_call"
+            },
+            "77": {
+              "fill": "def_call"
+            },
+            "88": {
+              "fill": "def_call"
+            },
+            "99": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_raise_call4"
+            },
+            "QQ": {
+              "fill": "def_5bet_allin"
+            },
+            "KK": {
+              "fill": "def_5bet_allin"
+            },
+            "AKs": {
+              "fill": "def_5bet_allin"
+            },
+            "AA": {
+              "fill": "def_5bet_allin"
+            },
+            "AKo": {
+              "fill": "def_5bet_allin"
+            },
+            "QJs": {
+              "fill": "def_call"
+            },
+            "KJs": {
+              "fill": "def_call"
+            },
+            "Q6s": {
+              "fill": "def_call"
+            },
+            "K2s": {
+              "fill": "def_call"
+            },
+            "A2s": {
+              "fill": "def_call"
+            },
+            "A3s": {
+              "fill": "def_call"
+            },
+            "A6s": {
+              "fill": "def_call"
+            },
+            "A9s": {
+              "fill": "def_call"
+            },
+            "KTs": {
+              "fill": "def_call"
+            },
+            "QTs": {
+              "fill": "def_call"
+            },
+            "A8s": {
+              "fill": "def_call"
+            },
+            "A7s": {
+              "fill": "def_call"
+            },
+            "K7s": {
+              "fill": "def_call"
+            },
+            "K8s": {
+              "fill": "def_call"
+            },
+            "K9s": {
+              "fill": "def_call"
+            },
+            "Q8s": {
+              "fill": "def_call"
+            },
+            "Q7s": {
+              "fill": "def_call"
+            },
+            "Q9s": {
+              "fill": "def_call"
+            },
+            "K3s": {
+              "fill": "def_call"
+            },
+            "K4s": {
+              "fill": "def_call"
+            },
+            "K5s": {
+              "fill": "def_call"
+            },
+            "K6s": {
+              "fill": "def_call"
+            },
+            "T6s": {
+              "fill": "def_call"
+            },
+            "T7s": {
+              "fill": "def_call"
+            },
+            "T8s": {
+              "fill": "def_call"
+            },
+            "J8s": {
+              "fill": "def_call"
+            },
+            "J9s": {
+              "fill": "def_call"
+            },
+            "AQo": {
+              "fill": "def_raise_fold4"
+            },
+            "KQo": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "QJo": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "KJo": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "AJo": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "A9o": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "ATo": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "A8o": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "QTo": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "KTo": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "JTo": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "JJ": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_raise_call4"
+            },
+            "JTs": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "TT": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_raise_call4"
+            },
+            "T9s": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "KQs": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_raise_call4"
+            },
+            "AQs": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_raise_call4"
+            },
+            "ATs": {
+              "fill": "def_raise_fold4"
+            },
+            "AJs": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_raise_call4"
+            },
+            "96s": {
+              "fill": "def_call"
+            },
+            "86s": {
+              "fill": "def_call"
+            },
+            "85s": {
+              "fill": "def_call"
+            },
+            "75s": {
+              "fill": "def_call"
+            },
+            "97s": {
+              "fill": "def_call"
+            },
+            "43s": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "54s": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "65s": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "76s": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "87s": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "98s": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "53s": {
+              "fill": "def_call"
+            },
+            "64s": {
+              "fill": "def_call"
+            },
+            "J7s": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "J6s": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "J5s": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "Q5s": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "Q4s": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "Q3s": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "Q2s": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "A4s": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            },
+            "A5s": {
+              "fill": "def_raise_fold4",
+              "fillSecondary": "def_call"
+            }
+          }
+        },
+        {
+          "id": "r3oody0u",
+          "coords": {
+            "sizing": "vs 6bb",
+            "villain": "vs 40%"
+          },
+          "cells": {
+            "22": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "33": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "44": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "55": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "66": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "77": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "88": {
+              "fill": "def_5bet_allin",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "99": {
+              "fill": "def_5bet_allin",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "AA": {
+              "fill": "def_5bet_allin"
+            },
+            "AKs": {
+              "fill": "def_5bet_allin"
+            },
+            "AKo": {
+              "fill": "def_5bet_allin"
+            },
+            "KK": {
+              "fill": "def_5bet_allin"
+            },
+            "AQo": {
+              "fill": "def_5bet_allin"
+            },
+            "QQ": {
+              "fill": "def_5bet_allin"
+            },
+            "JJ": {
+              "fill": "def_5bet_allin",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "TT": {
+              "fill": "def_5bet_allin",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A5s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A9s": {
+              "fill": "def_call"
+            },
+            "A8s": {
+              "fill": "def_call"
+            },
+            "KTs": {
+              "fill": "def_call"
+            },
+            "K9s": {
+              "fill": "def_call"
+            },
+            "QJs": {
+              "fill": "def_call"
+            },
+            "QTs": {
+              "fill": "def_call"
+            },
+            "Q9s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "KQo": {
+              "fill": "def_call"
+            },
+            "AJo": {
+              "fill": "def_call"
+            },
+            "ATo": {
+              "fill": "def_call"
+            },
+            "KJo": {
+              "fill": "def_raise_fold4"
+            },
+            "QJo": {
+              "fill": "def_raise_fold4"
+            },
+            "KTo": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "QTo": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "JTo": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A7s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A6s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A4s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A3s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A2s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "K5s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "K8s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "K7s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "K6s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "Q8s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "J8s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "T8s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "JTs": {
+              "fill": "def_call"
+            },
+            "J9s": {
+              "fill": "def_call",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "T9s": {
+              "fill": "def_call"
+            },
+            "KJs": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "KQs": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "AQs": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "AJs": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "ATs": {
+              "fill": "def_raise_call4",
+              "fillSecondary": "def_raise_fold4"
+            },
+            "86s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "75s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "64s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "54s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "76s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "65s": {
+              "fillSecondary": "def_raise_fold4"
+            }
+          }
+        },
+        {
+          "id": "rop6z0bp",
+          "coords": {
+            "sizing": "vs 6bb",
+            "villain": "vs 10%"
+          },
+          "cells": {
+            "AA": {
+              "fill": "def_5bet_allin"
+            },
+            "KK": {
+              "fill": "def_5bet_allin"
+            },
+            "JJ": {
+              "fillSecondary": "def_call"
+            },
+            "QQ": {
+              "fill": "def_call"
+            },
+            "AKo": {
+              "fill": "def_call"
+            },
+            "AKs": {
+              "fill": "def_call"
+            },
+            "AQs": {
+              "fill": "def_call"
+            },
+            "KQs": {
+              "fillSecondary": "def_raise_fold4"
+            }
+          }
+        },
+        {
+          "id": "r7okmefa",
+          "coords": {
+            "sizing": "vs 6bb",
+            "villain": "vs 20%"
+          },
+          "cells": {
+            "99": {
+              "fill": "def_call"
+            },
+            "AA": {
+              "fill": "def_5bet_allin"
+            },
+            "AKs": {
+              "fill": "def_5bet_allin"
+            },
+            "KK": {
+              "fill": "def_5bet_allin"
+            },
+            "AKo": {
+              "fill": "def_5bet_allin"
+            },
+            "AQs": {
+              "fill": "def_call"
+            },
+            "AJs": {
+              "fill": "def_call"
+            },
+            "KQs": {
+              "fill": "def_call"
+            },
+            "JJ": {
+              "fill": "def_call"
+            },
+            "TT": {
+              "fill": "def_call"
+            },
+            "AQo": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "QQ": {
+              "fill": "def_raise_call4"
+            },
+            "76s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "65s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "54s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A4s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "A5s": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "ATs": {
+              "fillSecondary": "def_raise_fold4"
+            },
+            "KJs": {
+              "fillSecondary": "def_raise_fold4"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ckgduig4",
+      "name": "RFI en Blinds",
+      "type": "attaque",
+      "ranges": [
+        {
+          "id": "pgwnevkq",
+          "coords": {
+            "position": "SB"
+          },
+          "cells": {
+            "22": {
+              "fill": "att_limp_fold"
+            },
+            "33": {
+              "fill": "att_limp_fold"
+            },
+            "44": {
+              "fill": "att_limp_fold"
+            },
+            "55": {
+              "fill": "att_limp_fold"
+            },
+            "66": {
+              "fill": "att_limp_fold"
+            },
+            "77": {
+              "fill": "att_limp_fold"
+            },
+            "88": {
+              "fill": "att_limp_fold"
+            },
+            "99": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "A2o": {
+              "fill": "att_limp_fold"
+            },
+            "A9o": {
+              "fill": "att_limp_fold"
+            },
+            "A8o": {
+              "fill": "att_limp_fold"
+            },
+            "A7o": {
+              "fill": "att_limp_fold"
+            },
+            "A6o": {
+              "fill": "att_limp_fold"
+            },
+            "A5o": {
+              "fill": "att_limp_fold"
+            },
+            "A4o": {
+              "fill": "att_limp_fold"
+            },
+            "A3o": {
+              "fill": "att_limp_fold"
+            },
+            "A9s": {
+              "fill": "att_limp_fold"
+            },
+            "A7s": {
+              "fill": "att_limp_fold"
+            },
+            "A6s": {
+              "fill": "att_limp_fold"
+            },
+            "A8s": {
+              "fill": "att_limp_fold"
+            },
+            "KJo": {
+              "fill": "att_limp_fold"
+            },
+            "QJo": {
+              "fill": "att_limp_fold"
+            },
+            "KTo": {
+              "fill": "att_limp_fold"
+            },
+            "QTo": {
+              "fill": "att_limp_fold"
+            },
+            "JTo": {
+              "fill": "att_limp_fold"
+            },
+            "QTs": {
+              "fill": "att_limp_fold"
+            },
+            "K9s": {
+              "fill": "att_limp_fold"
+            },
+            "Q9s": {
+              "fill": "att_limp_fold"
+            },
+            "TT": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "JJ": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "QJs": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "KJs": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "AJs": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "ATs": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "AKs": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "AQs": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "AKo": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "AQo": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "QQ": {
+              "fill": "att_4bet_call",
+              "outline": "att_6bb"
+            },
+            "KK": {
+              "fill": "att_4bet_call",
+              "outline": "att_6bb"
+            },
+            "AA": {
+              "fill": "att_4bet_call",
+              "outline": "att_6bb"
+            },
+            "ATo": {
+              "fill": "att_open_fold",
+              "outline": "att_6bb"
+            },
+            "AJo": {
+              "fill": "att_open_fold",
+              "outline": "att_6bb"
+            },
+            "KQo": {
+              "fill": "att_open_fold",
+              "outline": "att_6bb"
+            },
+            "KTs": {
+              "fill": "att_open_fold",
+              "outline": "att_6bb"
+            },
+            "JTs": {
+              "fill": "att_open_fold",
+              "outline": "att_6bb"
+            },
+            "A5s": {
+              "fill": "att_limp_call"
+            },
+            "A4s": {
+              "fill": "att_limp_call"
+            },
+            "A3s": {
+              "fill": "att_limp_call"
+            },
+            "A2s": {
+              "fill": "att_limp_call"
+            },
+            "K8s": {
+              "fill": "att_limp_fold"
+            },
+            "K2s": {
+              "fill": "att_limp_fold"
+            },
+            "K3s": {
+              "fill": "att_limp_fold"
+            },
+            "K4s": {
+              "fill": "att_limp_fold"
+            },
+            "K5s": {
+              "fill": "att_limp_fold"
+            },
+            "K6s": {
+              "fill": "att_limp_fold"
+            },
+            "K7s": {
+              "fill": "att_limp_fold"
+            },
+            "Q8s": {
+              "fill": "att_limp_fold"
+            },
+            "Q7s": {
+              "fill": "att_limp_fold"
+            },
+            "Q6s": {
+              "fill": "att_limp_fold"
+            },
+            "Q3s": {
+              "fill": "att_limp_fold"
+            },
+            "Q2s": {
+              "fill": "att_limp_fold"
+            },
+            "Q4s": {
+              "fill": "att_limp_fold"
+            },
+            "Q5s": {
+              "fill": "att_limp_fold"
+            },
+            "KQs": {
+              "fill": "att_open_call",
+              "outline": "att_6bb"
+            },
+            "J5s": {
+              "fill": "att_limp_fold"
+            },
+            "J4s": {
+              "fill": "att_limp_fold"
+            },
+            "J2s": {
+              "fill": "att_limp_fold"
+            },
+            "J3s": {
+              "fill": "att_limp_fold"
+            },
+            "J6s": {
+              "fill": "att_limp_fold"
+            },
+            "J9s": {
+              "fill": "att_limp_fold"
+            },
+            "J8s": {
+              "fill": "att_limp_fold"
+            },
+            "J7s": {
+              "fill": "att_limp_fold"
+            },
+            "T6s": {
+              "fill": "att_limp_fold"
+            },
+            "85s": {
+              "fill": "att_limp_fold"
+            },
+            "96s": {
+              "fill": "att_limp_fold"
+            },
+            "86s": {
+              "fill": "att_limp_fold"
+            },
+            "74s": {
+              "fill": "att_limp_fold"
+            },
+            "64s": {
+              "fill": "att_limp_fold"
+            },
+            "53s": {
+              "fill": "att_limp_fold"
+            },
+            "43s": {
+              "fill": "att_limp_fold"
+            },
+            "K7o": {
+              "fill": "att_limp_fold"
+            },
+            "Q7o": {
+              "fill": "att_limp_fold"
+            },
+            "K8o": {
+              "fill": "att_limp_fold"
+            },
+            "Q8o": {
+              "fill": "att_limp_fold"
+            },
+            "J8o": {
+              "fill": "att_limp_fold"
+            },
+            "T8o": {
+              "fill": "att_limp_fold"
+            },
+            "98o": {
+              "fill": "att_limp_fold"
+            },
+            "87s": {
+              "fill": "att_limp_fold"
+            },
+            "K9o": {
+              "fill": "att_limp_fold"
+            },
+            "Q9o": {
+              "fill": "att_limp_fold"
+            },
+            "J9o": {
+              "fill": "att_limp_fold"
+            },
+            "T9o": {
+              "fill": "att_limp_fold"
+            },
+            "T9s": {
+              "fill": "att_limp_fold"
+            },
+            "T8s": {
+              "fill": "att_limp_fold"
+            },
+            "T7s": {
+              "fill": "att_limp_fold"
+            },
+            "97s": {
+              "fill": "att_limp_fold"
+            },
+            "98s": {
+              "fill": "att_limp_fold"
+            },
+            "76s": {
+              "fill": "att_limp_fold"
+            },
+            "75s": {
+              "fill": "att_limp_fold"
+            },
+            "65s": {
+              "fill": "att_limp_fold"
+            },
+            "54s": {
+              "fill": "att_limp_fold"
+            },
+            "97o": {
+              "fill": "att_limp_fold"
+            },
+            "87o": {
+              "fill": "att_limp_fold"
+            },
+            "76o": {
+              "fill": "att_limp_fold"
+            },
+            "65o": {
+              "fill": "att_limp_fold"
+            }
+          }
+        },
+        {
+          "id": "rmoehdnk",
+          "coords": {
+            "position": "BB"
+          },
+          "cells": {
+            "22": {
+              "fill": "att_limp_fold"
+            },
+            "33": {
+              "fill": "att_limp_fold"
+            },
+            "44": {
+              "fill": "att_limp_fold"
+            },
+            "55": {
+              "fill": "att_limp_fold"
+            },
+            "66": {
+              "fill": "att_limp_fold"
+            },
+            "77": {
+              "fill": "att_limp_fold"
+            },
+            "88": {
+              "fill": "att_limp_fold"
+            },
+            "99": {
+              "fill": "att_open_call"
+            },
+            "TT": {
+              "fill": "att_open_call"
+            },
+            "JJ": {
+              "fill": "att_open_call"
+            },
+            "QJs": {
+              "fill": "att_open_call"
+            },
+            "KJs": {
+              "fill": "att_open_call"
+            },
+            "AJs": {
+              "fill": "att_open_call"
+            },
+            "AKs": {
+              "fill": "att_open_call"
+            },
+            "AQs": {
+              "fill": "att_open_call"
+            },
+            "ATs": {
+              "fill": "att_open_call"
+            },
+            "AKo": {
+              "fill": "att_open_call"
+            },
+            "AA": {
+              "fill": "att_4bet_call"
+            },
+            "KK": {
+              "fill": "att_4bet_call"
+            },
+            "QQ": {
+              "fill": "att_4bet_call"
+            },
+            "AQo": {
+              "fill": "att_open_call"
+            },
+            "KQo": {
+              "fill": "att_open_fold"
+            },
+            "AJo": {
+              "fill": "att_open_fold"
+            },
+            "ATo": {
+              "fill": "att_open_fold"
+            },
+            "KTs": {
+              "fill": "att_open_fold"
+            },
+            "JTs": {
+              "fill": "att_open_fold"
+            },
+            "A5s": {
+              "fill": "att_limp_call"
+            },
+            "A4s": {
+              "fill": "att_limp_call"
+            },
+            "A3s": {
+              "fill": "att_limp_call"
+            },
+            "A2s": {
+              "fill": "att_limp_call"
+            },
+            "KQs": {
+              "fill": "att_open_call"
+            },
+            "QJo": {
+              "fill": "att_limp_fold"
+            },
+            "KJo": {
+              "fill": "att_limp_fold"
+            },
+            "KTo": {
+              "fill": "att_limp_fold"
+            },
+            "QTo": {
+              "fill": "att_limp_fold"
+            },
+            "JTo": {
+              "fill": "att_limp_fold"
+            },
+            "K9o": {
+              "fill": "att_limp_fold"
+            },
+            "Q9o": {
+              "fill": "att_limp_fold"
+            },
+            "A9o": {
+              "fill": "att_limp_fold"
+            },
+            "J9o": {
+              "fill": "att_limp_fold"
+            },
+            "T9o": {
+              "fill": "att_limp_fold"
+            },
+            "T8o": {
+              "fill": "att_limp_fold"
+            },
+            "J8o": {
+              "fill": "att_limp_fold"
+            },
+            "Q8o": {
+              "fill": "att_limp_fold"
+            },
+            "K8o": {
+              "fill": "att_limp_fold"
+            },
+            "A8o": {
+              "fill": "att_limp_fold"
+            },
+            "A7o": {
+              "fill": "att_limp_fold"
+            },
+            "K7o": {
+              "fill": "att_limp_fold"
+            },
+            "Q7o": {
+              "fill": "att_limp_fold"
+            },
+            "J7o": {
+              "fill": "att_limp_fold"
+            },
+            "T7o": {
+              "fill": "att_limp_fold"
+            },
+            "97o": {
+              "fill": "att_limp_fold"
+            },
+            "87o": {
+              "fill": "att_limp_fold"
+            },
+            "76s": {
+              "fill": "att_limp_fold"
+            },
+            "75s": {
+              "fill": "att_limp_fold"
+            },
+            "85s": {
+              "fill": "att_limp_fold"
+            },
+            "95s": {
+              "fill": "att_limp_fold"
+            },
+            "Q5s": {
+              "fill": "att_limp_fold"
+            },
+            "K5s": {
+              "fill": "att_limp_fold"
+            },
+            "A6s": {
+              "fill": "att_limp_fold"
+            },
+            "A7s": {
+              "fill": "att_limp_fold"
+            },
+            "A8s": {
+              "fill": "att_limp_fold"
+            },
+            "A9s": {
+              "fill": "att_limp_fold"
+            },
+            "K9s": {
+              "fill": "att_limp_fold"
+            },
+            "K7s": {
+              "fill": "att_limp_fold"
+            },
+            "K8s": {
+              "fill": "att_limp_fold"
+            },
+            "Q9s": {
+              "fill": "att_limp_fold"
+            },
+            "QTs": {
+              "fill": "att_limp_fold"
+            },
+            "Q7s": {
+              "fill": "att_limp_fold"
+            },
+            "Q8s": {
+              "fill": "att_limp_fold"
+            },
+            "Q6s": {
+              "fill": "att_limp_fold"
+            },
+            "K6s": {
+              "fill": "att_limp_fold"
+            },
+            "K4s": {
+              "fill": "att_limp_fold"
+            },
+            "Q4s": {
+              "fill": "att_limp_fold"
+            },
+            "Q3s": {
+              "fill": "att_limp_fold"
+            },
+            "K3s": {
+              "fill": "att_limp_fold"
+            },
+            "K2s": {
+              "fill": "att_limp_fold"
+            },
+            "Q2s": {
+              "fill": "att_limp_fold"
+            },
+            "J2s": {
+              "fill": "att_limp_fold"
+            },
+            "T2s": {
+              "fill": "att_limp_fold"
+            },
+            "92s": {
+              "fill": "att_limp_fold"
+            },
+            "72s": {
+              "fill": "att_limp_fold"
+            },
+            "82s": {
+              "fill": "att_limp_fold"
+            },
+            "83s": {
+              "fill": "att_limp_fold"
+            },
+            "84s": {
+              "fill": "att_limp_fold"
+            },
+            "94s": {
+              "fill": "att_limp_fold"
+            },
+            "93s": {
+              "fill": "att_limp_fold"
+            },
+            "T3s": {
+              "fill": "att_limp_fold"
+            },
+            "J3s": {
+              "fill": "att_limp_fold"
+            },
+            "J5s": {
+              "fill": "att_limp_fold"
+            },
+            "T5s": {
+              "fill": "att_limp_fold"
+            },
+            "T4s": {
+              "fill": "att_limp_fold"
+            },
+            "J4s": {
+              "fill": "att_limp_fold"
+            },
+            "J9s": {
+              "fill": "att_limp_fold"
+            },
+            "J7s": {
+              "fill": "att_limp_fold"
+            },
+            "J6s": {
+              "fill": "att_limp_fold"
+            },
+            "J8s": {
+              "fill": "att_limp_fold"
+            },
+            "T9s": {
+              "fill": "att_limp_fold"
+            },
+            "T8s": {
+              "fill": "att_limp_fold"
+            },
+            "T7s": {
+              "fill": "att_limp_fold"
+            },
+            "T6s": {
+              "fill": "att_limp_fold"
+            },
+            "96s": {
+              "fill": "att_limp_fold"
+            },
+            "97s": {
+              "fill": "att_limp_fold"
+            },
+            "98s": {
+              "fill": "att_limp_fold"
+            },
+            "98o": {
+              "fill": "att_limp_fold"
+            },
+            "87s": {
+              "fill": "att_limp_fold"
+            },
+            "86s": {
+              "fill": "att_limp_fold"
+            },
+            "74s": {
+              "fill": "att_limp_fold"
+            },
+            "73s": {
+              "fill": "att_limp_fold"
+            },
+            "62s": {
+              "fill": "att_limp_fold"
+            },
+            "63s": {
+              "fill": "att_limp_fold"
+            },
+            "64s": {
+              "fill": "att_limp_fold"
+            },
+            "65s": {
+              "fill": "att_limp_fold"
+            },
+            "76o": {
+              "fill": "att_limp_fold"
+            },
+            "86o": {
+              "fill": "att_limp_fold"
+            },
+            "96o": {
+              "fill": "att_limp_fold"
+            },
+            "T6o": {
+              "fill": "att_limp_fold"
+            },
+            "Q6o": {
+              "fill": "att_limp_fold"
+            },
+            "J6o": {
+              "fill": "att_limp_fold"
+            },
+            "K6o": {
+              "fill": "att_limp_fold"
+            },
+            "A6o": {
+              "fill": "att_limp_fold"
+            },
+            "A5o": {
+              "fill": "att_limp_fold"
+            },
+            "A4o": {
+              "fill": "att_limp_fold"
+            },
+            "K4o": {
+              "fill": "att_limp_fold"
+            },
+            "K3o": {
+              "fill": "att_limp_fold"
+            },
+            "A3o": {
+              "fill": "att_limp_fold"
+            },
+            "A2o": {
+              "fill": "att_limp_fold"
+            },
+            "K2o": {
+              "fill": "att_limp_fold"
+            },
+            "J5o": {
+              "fill": "att_limp_fold"
+            },
+            "Q5o": {
+              "fill": "att_limp_fold"
+            },
+            "K5o": {
+              "fill": "att_limp_fold"
+            },
+            "Q3o": {
+              "fill": "att_limp_fold"
+            },
+            "J4o": {
+              "fill": "att_limp_fold"
+            },
+            "Q4o": {
+              "fill": "att_limp_fold"
+            },
+            "J3o": {
+              "fill": "att_limp_fold"
+            },
+            "Q2o": {
+              "fill": "att_limp_fold"
+            },
+            "J2o": {
+              "fill": "att_limp_fold"
+            },
+            "T3o": {
+              "fill": "att_limp_fold"
+            },
+            "T2o": {
+              "fill": "att_limp_fold"
+            },
+            "T4o": {
+              "fill": "att_limp_fold"
+            },
+            "T5o": {
+              "fill": "att_limp_fold"
+            },
+            "95o": {
+              "fill": "att_limp_fold"
+            },
+            "94o": {
+              "fill": "att_limp_fold"
+            },
+            "92o": {
+              "fill": "att_limp_fold"
+            },
+            "93o": {
+              "fill": "att_limp_fold"
+            },
+            "85o": {
+              "fill": "att_limp_fold"
+            },
+            "84o": {
+              "fill": "att_limp_fold"
+            },
+            "74o": {
+              "fill": "att_limp_fold"
+            },
+            "83o": {
+              "fill": "att_limp_fold"
+            },
+            "73o": {
+              "fill": "att_limp_fold"
+            },
+            "82o": {
+              "fill": "att_limp_fold"
+            },
+            "72o": {
+              "fill": "att_limp_fold"
+            },
+            "62o": {
+              "fill": "att_limp_fold"
+            },
+            "63o": {
+              "fill": "att_limp_fold"
+            },
+            "64o": {
+              "fill": "att_limp_fold"
+            },
+            "65o": {
+              "fill": "att_limp_fold"
+            },
+            "75o": {
+              "fill": "att_limp_fold"
+            },
+            "54o": {
+              "fill": "att_limp_fold"
+            },
+            "53o": {
+              "fill": "att_limp_fold"
+            },
+            "52o": {
+              "fill": "att_limp_fold"
+            },
+            "43o": {
+              "fill": "att_limp_fold"
+            },
+            "54s": {
+              "fill": "att_limp_fold"
+            },
+            "53s": {
+              "fill": "att_limp_fold"
+            },
+            "52s": {
+              "fill": "att_limp_fold"
+            },
+            "42s": {
+              "fill": "att_limp_fold"
+            },
+            "32s": {
+              "fill": "att_limp_fold"
+            },
+            "43s": {
+              "fill": "att_limp_fold"
+            },
+            "42o": {
+              "fill": "att_limp_fold"
+            },
+            "32o": {
+              "fill": "att_limp_fold"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
